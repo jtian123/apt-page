@@ -39,7 +39,8 @@ mastodon_link                             :
 features                                  :
 
   - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
+    image                                 : assets/feature-images/apt-page/yourscreenshot.png
+    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. 
     fontawesome_icon_name                 : magic
     
   - title                                 : iPhone Device Preview
