@@ -1,60 +1,130 @@
 ---
 layout: page
 title: Privacy Policy
-include_in_header: false
+include_in_header: true
 ---
 
 **Last updated**  
-August 1 2019
+May 07 2025
 
-# Privacy Policy
-Submissive a when owing much far bawdy thanks impolitely alas overlaid one and this one chuckled darn on more due much misheard amused far far the much purposeful that wildebeest dalmatian and piranha bluebird this and much despite however much sincere nonsensical this paradoxically more.
+Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
-**Please note:** This is purely a dummy Privacy Policy that serves as an example for how you can use this app landing page generator. Please replace the contents with your own privacy policy.
+---
 
-<br>
+## 1. Information We Collect
 
-## 1.0 Information We Collect
-Far near but lighted walking far oyster hello kneeled flung and roadrunner and more witless narrowly flexed brokenly blandly much in famous jeez obsessive that.
+### 1.1. Information You Provide Directly  
+- **Account Information:** Name, email address, phone number, password.  
+- **Profile Data:** Profile picture, username, bio.  
+- **Listings & Transactions:** Property details, photos, pricing, messages you send through in-App chat.  
 
-### 1.1 Information from third parties
-- Ouch until smirked some some newt that at frustrating.
-- Nimbly handsomely fabulously python.
-- Alas informally taped when a dear some.
+### 1.2. Information Collected Automatically  
+- **Usage Data:** Pages visited, search terms, filters applied, interactions with listings.  
+- **Device & Connection Data:** Device type, operating system, app version, IP address, browser type, mobile carrier, crash reports.  
+- **Location Data:** Precise or approximate location if you grant permission (used to show nearby listings).  
 
-### 1.2 Information you provide to us 
-Menacingly much walrus far together derisive falcon the toneless unceremoniously yet yikes a hung when because far drooled cast amused naughtily quiet hare a thickly more dogged drank more this dismounted since hence nakedly jeez rolled far gerbil the hey puerilely where vociferously struck insane much twitched instead some beneath then wiped dull snuffed far jeez nightingale bit goodness obscurely quit that much yet nefarious careless some concrete shrewdly gull closed this hugged aboard.
+### 1.3. Cookies & Similar Technologies  
+We use cookies, web beacons, and local storage to:  
+- Remember your preferences and login state.  
+- Analyze usage patterns.  
+- Deliver targeted content and ads (with your consent, where required).
 
-<br>
+---
 
-## 2.0 What Personal Information we collect about you and how we collect it
-Where cut one reproachful alas ambiguous helpful hen raucous editorial underwrote dubiously therefore this boastfully or possessively oh modest amidst some opposite far wasp grew emu snickered some jeepers and circa much that *equitable* foul camel caudally oh opossum far dear met far much close hello beheld facetious far goodness tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming or well approving sympathetically groundhog mongoose and deeply peaceful wow ouch far regally this and near and badly fatal blunt mischievously and and the blew.
+## 2. How We Use Your Information
 
-### 2.1 Third Parties we collect information from
-Various remotely save this querulously explicitly one this and far congenially broad grew said or abhorrently haltered darn beheld panther shrank and one goldfish the more away as much different moth.
+We use the information we collect to:  
+- **Provide & Improve the Platform:** Personalize your experience, enable features, troubleshoot bugs.  
+- **Communicate:** Send account confirmations, support responses, security alerts, and promotional messages (you can opt out).  
+- **Security & Fraud Prevention:** Detect and prevent unauthorized access, abuse, or fraudulent activity.  
+- **Analytics & Research:** Understand usage trends and make data-driven improvements.  
 
-| Third Party | What is it used for? |
-| :--- | :--- |
-| Falcon | Tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming. |
-| Eagle | Juggled crud a however overslept vehemently kept indisputably anteater walked alas or into. |
+---
 
-<br>
+## 3. Disclosure of Your Information
 
-## 3.0 What rights do you, as the data subject, have
-This goodness well well and more cowardly lynx credibly more apart save and less oh examined ouch marginal growled and proper liberally salmon busy some while pointed far because understood.
+### 3.1. Service Providers  
+We may share your data with third-party vendors who perform services on our behalf (hosting, analytics, payment processing, email delivery).
 
-1. Boastfully or possessively oh modest amidst.
-2. Far far the much purposeful that wildebeest dalmatian.
-3. Adamant or pushed less far overthrew.
+### 3.2. Business Transfers  
+In the event of a merger, acquisition, or sale of assets, your information may be transferred to the successor entity (with notice).
 
-All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+### 3.3. Legal Requirements  
+We may disclose your information if required by law, regulation, or to protect the rights, property, or safety of Nestify, our users, or others.
 
-<br>
+### 3.4. Public Listings  
+Any content you post publicly (e.g., listing details, public chat messages) is visible to other users and third parties.
 
-## 4.0 How we store and secure the Personal Information we collect
-Worm where gravely behind logically far in tastefully as alas delicately before well darn then far the much pulled red-handed circa much much far pangolin spelled much clung dachshund smirked close some the adamant or pushed less far overthrew in moth begrudging warthog newt pragmatic bent darn and far needlessly notwithstanding angrily as celestially horse rebuking magnanimous dear inscrutably jeepers listless before saucy this much however and wolf dear cringed crab a wanton jeepers flatteringly characteristically a atrocious and returned more lemming robin let some crud that more secure nimble where soundly pitiful because bombastic much.
+---
 
-<br>
+## 4. Your Choices
 
-## 5.0 Information processing and transfers for EEA individuals
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh.
+### 4.1. Access & Update  
+You can view or update your account information at any time via the App’s settings.
+
+### 4.2. Communications  
+You may opt out of marketing emails by following the unsubscribe link or contacting us at support@nestifyapp.com.
+
+### 4.3. Location Permissions  
+You can enable or disable location access in your device settings. If you revoke permission, location-based features will be limited.
+
+### 4.4. Cookies  
+Most browsers allow you to refuse or delete cookies via their settings menus. Note that disabling cookies may affect Platform functionality.
+
+---
+
+## 5. Data Retention
+
+We retain personal information only as long as necessary to:  
+- Provide the Platform and fulfill the purposes described.  
+- Comply with legal obligations.  
+- Resolve disputes and enforce agreements.
+
+---
+
+## 6. Security
+
+We implement industry-standard security measures (encryption in transit, secure data storage, access controls) to protect your information. However, no method of transmission or storage is 100% secure.
+
+---
+
+## 7. Children’s Privacy
+
+The Platform is not intended for children under 13. We do not knowingly collect personal information from users under 13. If you are a parent or guardian and believe we have collected data from a child under 13, please contact us to request deletion.
+
+---
+
+## 8. Third-Party Services & Links
+
+The Platform may contain links to third-party websites and services. We are not responsible for their privacy practices. Please review their policies before providing personal information.
+
+---
+
+## 9. International Transfers
+
+Your information may be processed in the United States or other jurisdictions with different data protection laws. By using the Platform, you consent to such transfers.
+
+---
+
+## 10. Your Rights (GDPR & CCPA)
+
+- **Access & Portability:** Request a copy of your data.  
+- **Rectification:** Ask us to correct inaccurate information.  
+- **Deletion:** Request deletion of your personal data (subject to legal restrictions).  
+- **Opt-Out (CCPA):** California residents may opt out of the sale of personal information.  
+To exercise these rights, contact us at support@nestifyapp.com. We will respond within the timeframe required by law.
+
+---
+
+## 11. Changes to This Privacy Policy
+
+We may update this Policy from time to time. We will post the revised version with a new “Effective Date.” Your continued use after changes indicates acceptance.
+
+---
+
+## 12. Contact Us
+
+If you have questions or concerns about this Privacy Policy, please contact:
+
+**Email:** nestify4connect@gmail.com  
+---
