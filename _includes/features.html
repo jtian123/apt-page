@@ -1,30 +1,33 @@
 <div class="features">
     {% for feature in site.features %}
       {% if feature.title %}
-        <div class="feature">
+        {%- assign has_image = feature.image | default: false -%}
+        <div class="feature{% if has_image %} has-image{% endif %}">
   
-          {%- comment -%} Display feature image styled via .iphoneScreen {%- endcomment -%}
-          {% if feature.image %}
+          {%- comment -%} Optional FontAwesome icon + text always come first {%- endcomment -%}
+          <div class="featureHeader">
+            <div class="featureIcon">
+              <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+              </span>
+            </div>
+  
+            <div class="featureText">
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.description }}</p>
+            </div>
+          </div>
+  
+          {%- if has_image -%}
             <img
-              class="iphoneScreen"
+              class="iphoneScreen featureImage"
               src="{{ site.github.baseurl }}{{ feature.image }}"
-              alt="{{ feature.title }} illustration"
-            />
-          {% endif %}
-  
-          <div class="featureIcon">
-            <span class="fa-stack fa-1x">
-              <i class="iconBack fas fa-circle fa-stack-2x"></i>
-              <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
-            </span>
-          </div>
-  
-          <div class="featureText">
-            <h3>{{ feature.title }}</h3>
-            <p>{{ feature.description }}</p>
-          </div>
+              alt="{{ feature.title }} illustration" />
+          {%- endif -%}
   
         </div>
       {% endif %}
     {% endfor %}
-  </div>
+</div>
+  

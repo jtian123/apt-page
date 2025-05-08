@@ -602,6 +602,36 @@ nav > ul li a:active {
 	
 } 
 
+/* Feature card tweaks when an image is present */
+.feature.has-image {
+	flex-direction: column;          /* stack icon/text on top */
+	align-items: flex-start;         /* left-align content */
+  }
+  
+.feature.has-image .featureText {
+	margin-left: 0;                  /* remove side gap */
+	margin-top: 12px;                /* space below icon */
+}
+
+.featureImage {
+	width: 100%;                     /* responsive width inside column */
+	max-width: 220px;                /* cap so it doesn’t dominate */
+	height: auto;
+	object-fit: contain;             /* keep aspect ratio */
+	margin-top: 14px;                /* gap under text */
+}
+
+@media only screen and (max-width: 992px) {
+	.featureImage {
+		max-width: 180px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.featureImage {
+		max-width: 140px;
+	}
+}
 
 
 // Footer
