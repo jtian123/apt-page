@@ -39,13 +39,14 @@ mastodon_link                             :
 features                                  :
 
   - title                                 : GitHub Pages Jekyll Theme
-    # image                                 : assets/feature-images/apt-page/yourscreenshot.png
     description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. 
     fontawesome_icon_name                 : magic
+    image                                 : assets/feature-images/apt-page/yourscreenshot.png
     
   - title                                 : iPhone Device Preview
     description                           : Preview your app in the context of an iPhone device. Five different device colors included.
     fontawesome_icon_name                 : mobile
+    image                                 : assets/feature-images/apt-page/yourscreenshot.png
 
   - title                                 : Video Support
     description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
