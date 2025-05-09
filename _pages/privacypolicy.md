@@ -124,7 +124,4 @@ We may update this Policy from time to time. We will post the revised version wi
 
 ## 12. Contact Us
 
-If you have questions or concerns about this Privacy Policy, please contact:
-
-**Email:** nestify4connect@gmail.com  
----
+For questions or concerns about these Terms, please email us at **nestify4connect@gmail.com**.  
