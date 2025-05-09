@@ -41,12 +41,12 @@ features                                  :
   - title                                 : GitHub Pages Jekyll Theme
     description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. 
     fontawesome_icon_name                 : magic
-    image                                 : assets/feature-images/apt-page/yourscreenshot.png
+    # image                                 : assets/feature-images/apt-page/yourscreenshot.png
     
   - title                                 : iPhone Device Preview
     description                           : Preview your app in the context of an iPhone device. Five different device colors included.
     fontawesome_icon_name                 : mobile
-    image                                 : assets/feature-images/apt-page/yourscreenshot.png
+    # image                                 : assets/feature-images/apt-page/yourscreenshot.png
 
   - title                                 : Video Support
     description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
@@ -87,7 +87,7 @@ topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
 
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_image                               : assets/IMG_8433.JPG                    # Replace with alternative image path or image URL.
 cover_overlay_color                       : "#363b3d"
 cover_overlay_transparency                : 0.8
 
