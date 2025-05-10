@@ -23,7 +23,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Apateu                                      # Enter your name or company name. This will be displayed in the footer.                              
 your_link                                 :                      
 your_city                                 : Los Angeles                               
-email_address                             : nestify4connect@gmail.com
+email_address                             : Apateu.app@gmail.com
 linkedin_username                         :                                           
 linkedin_company                          :                                           
 facebook_username                         :                                           
@@ -79,16 +79,16 @@ features                                  :
 
 # Theme Settings
 topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
+topbar_transparency                       : 0.5
 topbar_title_color                        : "#ffffff"
 
 cover_image                               : assets/IMG_8432.JPG                    # Replace with alternative image path or image URL.
 cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
+cover_overlay_transparency                : 0.9
 
 device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
 
-body_background_color                     : "#cfbaf0"
+body_background_color                     : "#f1c0e8"
 
 link_color                                : "#1d63ea"
 
