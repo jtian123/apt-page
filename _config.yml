@@ -88,7 +88,7 @@ cover_overlay_transparency                : 0.8
 
 device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
 
-body_background_color                     : "#ffffff"
+body_background_color                     : "#cfbaf0"
 
 link_color                                : "#1d63ea"
 
@@ -102,10 +102,10 @@ feature_text_color                        : "#666666"
 feature_icons_foreground_color            : "#8338ec"
 feature_icons_background_color            : "#e6e6e6"
 
-social_icons_foreground_color             : "#666666"
+social_icons_foreground_color             : "#8338ec"
 social_icons_background_color             : "#e6e6e6"
 
-footer_text_color                         : "#666666"
+footer_text_color                         : "#8338ec"
 
 
 
