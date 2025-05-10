@@ -44,7 +44,7 @@ features                                  :
 
   - title                                 : Bid, Match, and Message
     description                           : Bid a price, show how much you want to offer first, match with the owner, and message them instantly to lock in the best deal. 
-    fontawesome_icon_name                 : gavel
+    fontawesome_icon_name                 : heart
     
   - title                                 : Safety and Security
     description                           : We take your safety seriously. We verify users legal ID and real face detection to ensure that you are dealing with real people.
