@@ -71,4 +71,4 @@ These Terms and our Privacy Policy constitute the entire agreement between you a
 ---
 
 ## Contact Information  
-For questions or concerns about these Terms, please email us at **Apateu.app@gmail.com**.
+For questions or concerns about these Terms, please email us at **admin@westapt.com**.
