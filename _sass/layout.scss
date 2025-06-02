@@ -102,6 +102,17 @@
 	margin-bottom: 10px;  // space below (before features)
 }
 
+@media only screen and (max-width: 768px) {
+
+	.timeline-container {
+		grid-area: t;         // the “timeline” row
+		grid-column: 2/12;    // occupy columns 3–10 (centered)
+		margin-top: 30px;     // space above timeline (before features/appInfo)
+		margin-bottom: 30px;  // space below (before features)
+		grid-column: 1/-1;
+	}
+	
+} 
 
 .page {
 	grid-area: c;
@@ -593,7 +604,7 @@ nav > ul li a:active {
 	transform: translateX(-50%);
 	display: flex;
 	gap: 6px;
-  }
+}
   
 /* Each dot */
 .dot {
@@ -652,10 +663,10 @@ nav > ul li a:active {
 		justify-content: flex-start; // top-align text when stacked
 	}
 	.section-text h3 {
-		font-size: 1.5rem;
+		font-size: 2.0 rem;
 	}
 	.section-text p {
-		font-size: 1.0rem;
+		font-size: 1.5rem;
 	}
 }
 
