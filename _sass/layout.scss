@@ -38,14 +38,25 @@
 	max-width: $content-width;
 	padding-left: 15px;
 	padding-right: 15px;
+	
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 115px 876px auto auto;
+  
+	// Add one more 'auto' row (for timeline) between the "p" and "c" rows:
+	//   1: 115px   (header row "h")
+	//   2: 876px   (iPhone + appInfo row "p" + "i")
+	//   3: auto    (timeline row "t")
+	//   4: auto    (features row "c")
+	//   5: auto    (footer row "f")
+	grid-template-rows: 115px auto auto auto auto;
+  
 	grid-column-gap: 30px;
+  
 	grid-template-areas: 
-		"h h h h h h h h h h h h"
-		"p p p p p i i i i i i i"
-		"c c c c c c c c c c c c"
-		"f f f f f f f f f f f f";
+	  "h h h h h h h h h h h h"   // row 1: header/nav
+	  "i i i i i i i i i i i i"   // row 2: iPhone + appInfo
+	  "t t t t t t t t t t t t"   // row 3: timeline
+	  "c c c c c c c c c c c c"   // row 4: features
+	  "f f f f f f f f f f f f";  // row 5: footer
 }
 
 .subPageContainer {
@@ -56,34 +67,53 @@
 @media only screen and (max-width: 768px) {
 
 	.container {					// Set up the container for the site content
-		grid-template-rows: 80px 811px auto auto;
+		grid-template-rows: 80px auto auto auto auto;
 	}
 }
 
 @media only screen and (max-width: 992px) {
-
 	.container {
-		grid-column-gap: 0px;
-		grid-template-columns: 1;
-		grid-template-rows: 115px auto auto auto auto;
-		grid-template-areas: 
-			"h h h h h h h h h h h h"
-			"i i i i i i i i i i i i"
-			"p p p p p p p p p p p p"
-			"c c c c c c c c c c c c"
-			"f f f f f f f f f f f f";
+	  grid-column-gap: 0px;
+  
+	  // In the mobile layout, add the “t” row between “p” and “c” here too:
+	  grid-template-columns: 1;              // single‐column grid
+	  grid-template-rows: 
+		115px   // header (row "h")
+		auto    // iPhone + appInfo (row "i" or "p" depending on your markup)
+		auto    // timeline (new row "t")
+		auto    // features (row "c")
+		auto;   // footer (row "f")
+	  grid-template-areas: 
+		"h h h h h h h h h h h h"
+		"i i i i i i i i i i i i"
+		"t t t t t t t t t t t t"
+		"c c c c c c c c c c c c"
+		"f f f f f f f f f f f f";
 	}
 }
 
+// ─────────────────────────────────────────────────────────────────────
+// 2) Place the timeline into its own grid‐area “t”
+// ─────────────────────────────────────────────────────────────────────
+.timeline-container {
+	grid-area: t;         // the “timeline” row
+	grid-column: 2/12;    // occupy columns 3–10 (centered)
+	margin-top: 10px;     // space above timeline (before features/appInfo)
+	margin-bottom: 10px;  // space below (before features)
+}
+
+
 .page {
+	grid-area: c;
 	margin-top: 30px;
 	margin-bottom: 70px;
-	grid-column: 3/11;
+	grid-column: 2/12;
 }
 
 @media only screen and (max-width: 768px) {
 
 	.page {
+		grid-area: c;
 		margin-top: 30px;
 		margin-bottom: 70px;
 		grid-column: 1/-1;
@@ -468,6 +498,166 @@ nav > ul li a:active {
 	
 } 
 
+/* ================================================
+   TIMELINE STYLING (polished + modern look)
+   ================================================ */
+
+/* 1) Container holding all four cards */
+.sections-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;           // space between cards
+	width: 100%;           // fill entire .page (cols 2–12)
+	margin-bottom: 3rem;   // space below timeline before features
+  }
+  
+/* 2) Each individual “card” */
+.section {
+	display: flex;
+	align-items: center;          // center text vertically relative to image
+	width: 100%;
+	// background-color: #fff;
+	// Replace white background with a light, pastel gradient:
+	background: linear-gradient(
+		135deg,
+		rgba(144, 184, 244, 0.4) 0%,    // light blue (semi-transparent)
+		rgba(225, 156, 233, 0.4) 50%,// light purple (semi-transparent)
+		rgba(250, 128, 114, 0.4) 100%    // light salmon/red (semi-transparent)
+	);
+	border: 2px solid #e0e0e0;
+	border-radius: 12px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	/* Remove any fixed min-height—card will grow to fit the image */
+	/* min-height: 200px; */
+	/* Instead, let the image’s height define the card’s height */
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
+}
+
+/* 2a) Left side image (40% of the card’s width) */
+.section-image {
+	flex: 0 0 40%;
+	max-width: 260px;
+	margin-left: 3rem;   // small left padding
+	margin-right: 3rem;
+	/* add vertical padding here */
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	position: relative;
+
+	/* Let the image determine its own height. Remove max-height. */
+	img {
+		width: 100%;
+		height: auto;      // maintain aspect ratio
+		object-fit: cover; // fill width, crop if necessary
+		object-position: center;
+		border-radius: 6px;
+	}
+}
+
+.image-carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+  
+	/* Hide scrollbar */
+	scrollbar-width: none;   /* Firefox */
+	-ms-overflow-style: none;/* IE10+ */
+	&::-webkit-scrollbar {
+	  display: none;         /* Safari/WebKit */
+	}
+}
+  
+.image-carousel img {
+	flex: 0 0 100%;           /* each image fills the full carousel width */
+	scroll-snap-align: center;/* snap each image to center when swiping */
+	object-fit: cover;
+	object-position: center;
+	border-radius: 6px;
+	width: 100%;
+	height: auto;
+}
+/* Dots container, positioned at bottom‐center of image box */
+.carousel-dots {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 6px;
+  }
+  
+/* Each dot */
+.dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: background-color 0.2s;
+}
+  
+.dot.active {
+	background-color: rgba(255, 255, 255, 1);
+}
+/* 2b) Right side text (65% of the card’s width) */
+.section-text {
+	flex: 1;
+	padding: 1rem 1.5rem;
+	color: $feature-text-color;
+	font-size: 1rem;
+	line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;  // vertically center text next to image
+}
+
+.section-text h3 {
+	margin: 0 0 0.5rem;
+	color: $feature-title-color;
+	font-size: 2.0rem;
+	font-weight: 600;
+}
+
+.section-text p {
+	margin: 0;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color: $feature-text-color;
+}
+
+/* 3) Responsive: stack image above text on mobile */
+@media only screen and (max-width: 768px) {
+	.section {
+		flex-direction: column;
+		text-align: center;      // center text under the image
+	}
+	.section-image {
+		width: 100%;
+		margin: 0 auto 1rem;     // center image and add gap below
+	}
+	.image-carousel img {
+		flex: 0 0 100%;
+	}
+	.section-text {
+		width: 100%;
+		padding: 0.75rem 1rem;
+		justify-content: flex-start; // top-align text when stacked
+	}
+	.section-text h3 {
+		font-size: 1.5rem;
+	}
+	.section-text p {
+		font-size: 1.0rem;
+	}
+}
 
 // Feature List
 

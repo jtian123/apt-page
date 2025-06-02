@@ -13,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/logo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Apateu                                         # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : The easiest Tinder-inspired bidding platform for local subleases and secondhand finds. Browse through listings, submit custom bids and messages, and match instantly with owners to lock in the best deals—effortlessly, in seconds.
+app_description                           : The easiest Tinder-inspired marketplace for students and young professionals to effortlessly browse local subleases and secondhand items, submit custom bids and messages, and instantly connect with owners for seamless, trustworthy transactions.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -23,7 +23,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Apateu                                      # Enter your name or company name. This will be displayed in the footer.                              
 your_link                                 :                      
 your_city                                 : Los Angeles                               
-email_address                             : Apateu.app@gmail.com
+email_address                             : admin@westapt.com
 linkedin_username                         :                                           
 linkedin_company                          :                                           
 facebook_username                         :                                           

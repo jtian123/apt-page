@@ -15,11 +15,11 @@ At Apateu LLC, we strive to simplify housing transitions and peer-to-peer commer
 ## Corporate Information
 - **Legal Name:** Apateu LLC  
 - **D-U-N-S Number:** 119514861
-- **Entity No.:** B20250124222  
+<!-- - **Entity No.:** B20250124222   -->
 - **Founded:** May 2025  
 - **Formed In:** CALIFORNIA
 - **Registered Address:**  
-  3185 Wilshire Blvd, Suite 682  
+  3185 Wilshire Blvd
   Los Angeles, CA 90010  
 
 ## Contact
@@ -27,6 +27,3 @@ If you have questions about our company or governance, please contact us at:
 
 - **Email:** admin@westapt.com
 - **Phone:** 213-713-0880  
-- **Office Address:**  
-  3185 Wilshire Blvd, Suite 682  
-  Los Angeles, CA 90010  

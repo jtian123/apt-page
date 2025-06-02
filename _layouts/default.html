@@ -8,6 +8,7 @@
             <div class="headerBackground">
                 <div class="container">
                     {% include header.html %}
+                    <!--
                     <div class="iphonePreview">
 
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0 0" style="position: absolute;">
@@ -26,6 +27,7 @@
                         {% include screencontent.html %}
 
                     </div>
+                    -->
                     <div class="appInfo">
                         <div class="appIconShadow">
                             <svg width="0" height="0">
@@ -57,11 +59,74 @@
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                         </div>
                     </div>
-                    {% include features.html %}
-                    {% include footer.html %}
-                    {% include appstoreimages.html %}
                 </div>
             </div>
+    </div>
+    <!-- ========== end of banner ========== -->
+
+
+    <!-- ======================================================
+        MAIN GRID CONTAINER (features live in area “c”)
+        We’ll open “.container” again so that grid is already set up.
+        Then inside we use <div class="page"> to occupy cols 3–11.
+        ====================================================== -->
+    <div class="container">
+
+        <!-- ========== TIMELINE (in the same grid as “features”) ========== -->
+        <!-- TIMELINE (row “t”) -->
+        <div class="timeline-container">
+            {% include timeline.html %}
         </div>
+
+        <!-- ========== FEATURES (also inside .page) ========== -->
+        <div class="page">
+        {% include features.html %}
+        </div>
+        <!-- /.page -->
+
+
+        <!-- ========== FOOTER (should span all columns, but your CSS has f for full width) ========== -->
+        {% include footer.html %}
+        {% include appstoreimages.html %}
+
+    </div>
+    <!-- /.container -->
+
+    <script>
+        // Run after DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+          // For each "section-image" wrapper on the page:
+          document.querySelectorAll('.section-image').forEach(wrapper => {
+            const carousel = wrapper.querySelector('.image-carousel');
+            const dots = wrapper.querySelectorAll('.dot');
+      
+            if (!carousel || dots.length === 0) return; // skip if missing
+      
+            // On scroll (or swipe) inside the carousel:
+            carousel.addEventListener('scroll', () => {
+              // Determine the width of one "slide"
+              const slideWidth = carousel.clientWidth;
+              // Compute which index is currently closest to scrollLeft
+              // (scrollLeft / slideWidth) gives a float; round to nearest integer
+              const index = Math.round(carousel.scrollLeft / slideWidth);
+      
+              // Clamp index to valid range [0 .. dots.length-1]
+              const activeIndex = Math.min(Math.max(index, 0), dots.length - 1);
+      
+              // Toggle the "active" class on dots
+              dots.forEach((dot, i) => {
+                if (i === activeIndex) dot.classList.add('active');
+                else               dot.classList.remove('active');
+              });
+            });
+      
+            // Optional: if you want the initial dot to be active on load
+            // (e.g. before any scroll occurs), do this once now:
+            if (dots[0]) {
+              dots[0].classList.add('active');
+            }
+          });
+        });
+    </script>
 </body>
 </html>
