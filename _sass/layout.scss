@@ -300,13 +300,6 @@ nav > ul li a:active {
 
 } 
 
-/* On very small phones (≤ 420px wide), reduce the top padding again */
-@media only screen and (max-width: 420px) {
-	.appInfo {
-	  padding-top: 60px;
-	}
-}
-
 .appIconShadow {
 	display: flex;
 	filter: $drop-shadow;
@@ -376,10 +369,18 @@ nav > ul li a:active {
 @media only screen and (max-width: 992px) {
 
 	.appDescription {
+		font-size: 2.0rem;
 		text-align: center;
 	}
 	
 } 
+
+@media only screen and (max-width: 768px) {
+	.appDescription {
+	  font-size: 1.6rem;
+	}
+  }
+
 
 .downloadButtonsContainer {
 	display: inline-block;
