@@ -300,6 +300,13 @@ nav > ul li a:active {
 
 } 
 
+/* On very small phones (≤ 420px wide), reduce the top padding again */
+@media only screen and (max-width: 420px) {
+	.appInfo {
+	  padding-top: 60px;
+	}
+}
+
 .appIconShadow {
 	display: flex;
 	filter: $drop-shadow;
@@ -691,6 +698,11 @@ nav > ul li a:active {
 	width: calc(100%/3);
 }
 
+/* Add this to your SCSS */
+.featureIcon {
+	margin-bottom: 1rem; /* ~16px gap below the icon */
+}
+
 .feature:nth-child(-n+3) {
     padding-top: 0px;   
 }
@@ -811,7 +823,7 @@ nav > ul li a:active {
   
 .feature.has-image .featureText {
 	margin-left: 0;                  /* remove side gap */
-	margin-top: 12px;                /* space below icon */
+	margin-top: 0px;                /* space below icon */
 }
 
 .featureImage {
@@ -819,7 +831,7 @@ nav > ul li a:active {
 	max-width: 220px;                /* cap so it doesn’t dominate */
 	height: auto;
 	object-fit: contain;             /* keep aspect ratio */
-	margin-top: 14px;                /* gap under text */
+	margin-bottom: 24px;                /* gap under text */
 }
 
 @media only screen and (max-width: 992px) {
