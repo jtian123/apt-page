@@ -15,6 +15,22 @@
 
 }
 
+@media (min-width: 992px) {
+	.imageWrapper {
+	  /* Replace only the image source; keep the same gradient overlay */
+	  background-image:
+		linear-gradient(
+		  rgba($image-overlay-color, $image-overlay-transparency),
+		  rgba($image-overlay-color, $image-overlay-transparency)
+		),
+		url('/assets/LA.JPG');   // 1920×1080 or 2560×1440
+  
+	  /* Optionally adjust cropping: */
+	  background-position: center top;        // center horizontally
+	  /* or: background-position: center center; */
+	}
+}
+
 .headerBackground {
 	height: 115px;
 	background-color: rgba($header-color, $header-transparency);
