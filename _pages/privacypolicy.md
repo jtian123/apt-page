@@ -50,7 +50,7 @@ We may share your data with third-party vendors who perform services on our beha
 In the event of a merger, acquisition, or sale of assets, your information may be transferred to the successor entity (with notice).
 
 ### 3.3. Legal Requirements  
-We may disclose your information if required by law, regulation, or to protect the rights, property, or safety of Nestify, our users, or others.
+We may disclose your information if required by law, regulation, or to protect the rights, property, or safety of Apateu, our users, or others.
 
 ### 3.4. Public Listings  
 Any content you post publicly (e.g., listing details, public chat messages) is visible to other users and third parties.
@@ -63,7 +63,7 @@ Any content you post publicly (e.g., listing details, public chat messages) is v
 You can view or update your account information at any time via the App’s settings.
 
 ### 4.2. Communications  
-You may opt out of marketing emails by following the unsubscribe link or contacting us at support@nestifyapp.com.
+You may opt out of marketing emails by following the unsubscribe link or contacting us at support@apateu.com.
 
 ### 4.3. Location Permissions  
 You can enable or disable location access in your device settings. If you revoke permission, location-based features will be limited.
@@ -75,10 +75,17 @@ Most browsers allow you to refuse or delete cookies via their settings menus. No
 
 ## 5. Data Retention
 
-We retain personal information only as long as necessary to:  
-- Provide the Platform and fulfill the purposes described.  
-- Comply with legal obligations.  
+We retain personal information only as long as necessary to:
+- Provide the Platform and fulfill the purposes described.
+- Comply with legal obligations.
 - Resolve disputes and enforce agreements.
+
+### Data Retention & Deletion Policy
+We follow a strict data minimization policy to comply with GDPR, CCPA, and other applicable data privacy laws:
+- **Account Data:** Deleted within **30 days** of user request or account closure.
+- **Transaction Data:** Retained for up to **7 years** for legal, financial, and regulatory compliance.
+- **Backup Data:** Backups are automatically purged within **30 days**.
+- **Deletion Requests:** Users can request deletion by emailing **admin@westapt.com** or using in-app account settings. We process all verified requests within **30 days**.
 
 ---
 
@@ -112,7 +119,7 @@ Your information may be processed in the United States or other jurisdictions wi
 - **Rectification:** Ask us to correct inaccurate information.  
 - **Deletion:** Request deletion of your personal data (subject to legal restrictions).  
 - **Opt-Out (CCPA):** California residents may opt out of the sale of personal information.  
-To exercise these rights, contact us at support@nestifyapp.com. We will respond within the timeframe required by law.
+To exercise these rights, contact us at support@apateu.com. We will respond within the timeframe required by law.
 
 ---
 
@@ -124,4 +131,43 @@ We may update this Policy from time to time. We will post the revised version wi
 
 ## 12. Contact Us
 
-For questions or concerns about these Terms, please email us at **admin@westapt.com**.  
+For questions or concerns about this Privacy Policy, please email us at **admin@westapt.com**.
+
+---
+
+## 13. Information Security Policy
+
+We maintain a comprehensive Information Security Policy to protect your data and financial information:
+
+- **Infrastructure & Hosting:** Our backend services are hosted on **Amazon Web Services (AWS)** in secure Virtual Private Clouds (VPC). Access to AWS management console is restricted with **Multi-Factor Authentication (MFA)** and role-based permissions. Firewalls and security groups limit inbound and outbound traffic.
+  
+- **Database Security:** We use **MongoDB Atlas** as our managed database service. MongoDB Atlas enforces **encryption at rest (AES-256)**, **TLS 1.2+ encryption in transit**, **IP whitelisting**, and **role-based database access controls**. No direct client access to the database is permitted.
+
+- **API Key Security:** All API keys and credentials (Plaid, Stripe, AWS) are stored securely using environment variables and never exposed in client-side code or version control systems.
+
+- **Token Security:** Plaid access tokens and Stripe credentials are never exposed to clients and are securely stored on backend servers only.
+
+- **Data Encryption:** All sensitive data is encrypted using TLS 1.2+ during transmission and AES-256 when stored.
+
+- **Access Control:** Role-based permissions enforced across all systems. MFA required for administrative access to AWS, database, and deployment environments.
+
+- **Employee Security Training:** All employees undergo annual security and compliance training and sign confidentiality agreements.
+
+- **Third-Party Vendor Management:** We only integrate with trusted vendors (Plaid, Stripe, AWS, MongoDB) and regularly review their compliance certifications (SOC 2, ISO 27001).
+
+- **Logging:** Application logs do not contain sensitive user data such as bank account numbers, Plaid tokens, or PII. Sensitive actions are masked or anonymized.
+
+- **Incident Response:** In case of a security incident:
+  - Contain and isolate the system.
+  - Rotate API keys and revoke compromised credentials immediately.
+  - Notify affected users and comply with legal reporting obligations.
+
+- **Risk Management:** We perform quarterly vulnerability scans, monitor AWS GuardDuty alerts, and schedule annual penetration testing.
+
+- **Monitoring:** All system access is monitored for anomalies using AWS CloudWatch and alerting mechanisms.
+
+- **Policy Review:** Reviewed annually and after major changes to maintain compliance with SOC 2, GDPR, and CCPA.
+
+By using our Platform, you agree to these security practices.  
+
+---
