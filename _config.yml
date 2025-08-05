@@ -92,7 +92,7 @@ workflow_step5_subtitle                   : "When it's time to move out, hosts c
 # Marketplace Showcase Section Content
 marketplace_title                         : "Neighbor Marketplace"
 marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping—no shipping, no hassle, just local connections."
-marketplace_image                         : assets/my_mind2.jpg
+marketplace_image                         : assets/marketplace.jpg
 
 # App Store Images (already configured)
 # app_icon: assets/logo.png (configured above)
