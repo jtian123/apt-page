@@ -17,7 +17,7 @@
                         <img class="store-badge" src="assets/playstore.png" alt="Get it on Google Play">
                     </a>
                 {% endif %}
-                <a class="store-button" href="{{site.appstore_link}}">
+                <a class="store-button appStoreLink" href="{{site.appstore_link}}">
                     <img class="store-badge" src="assets/appstore.png" alt="Download on the App Store">
                 </a>
             </div>
@@ -362,6 +362,76 @@
     <script>
         // Run after DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
+          // Mobile Image Swapping Functionality
+          function initMobileImageSwapping() {
+            // Only run on mobile devices
+            if (window.innerWidth <= 768) {
+              const mainImage = document.querySelector('.screenshot-main .screenshot-image');
+              const leftImage = document.querySelector('.screenshot-left .screenshot-image');
+              const rightImage = document.querySelector('.screenshot-right .screenshot-image');
+              const leftCard = document.querySelector('.screenshot-left');
+              const rightCard = document.querySelector('.screenshot-right');
+              
+              if (!mainImage || !leftImage || !rightImage) return;
+              
+              // Store original sources
+              const images = {
+                main: mainImage.src,
+                left: leftImage.src,
+                right: rightImage.src
+              };
+              
+              // Left image click handler
+              leftCard.addEventListener('click', () => {
+                const newMain = images.left;
+                const newLeft = images.main;
+                
+                // Update sources
+                mainImage.src = newMain;
+                leftImage.src = newLeft;
+                
+                // Update stored references
+                images.main = newMain;
+                images.left = newLeft;
+                
+                // Add brief highlight effect
+                leftCard.style.transform = leftCard.style.transform.replace('scale(0.65)', 'scale(0.7)');
+                setTimeout(() => {
+                  leftCard.style.transform = leftCard.style.transform.replace('scale(0.7)', 'scale(0.65)');
+                }, 200);
+              });
+              
+              // Right image click handler
+              rightCard.addEventListener('click', () => {
+                const newMain = images.right;
+                const newRight = images.main;
+                
+                // Update sources
+                mainImage.src = newMain;
+                rightImage.src = newRight;
+                
+                // Update stored references
+                images.main = newMain;
+                images.right = newRight;
+                
+                // Add brief highlight effect
+                rightCard.style.transform = rightCard.style.transform.replace('scale(0.65)', 'scale(0.7)');
+                setTimeout(() => {
+                  rightCard.style.transform = rightCard.style.transform.replace('scale(0.7)', 'scale(0.65)');
+                }, 200);
+              });
+            }
+          }
+          
+          // Initialize mobile image swapping
+          initMobileImageSwapping();
+          
+          // Re-initialize on window resize
+          let resizeTimeout;
+          window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(initMobileImageSwapping, 250);
+          });
           // Simple Timeline Gallery Functionality
           document.querySelectorAll('.timeline-gallery').forEach(gallery => {
             const slides = gallery.querySelectorAll('.timeline-slide');

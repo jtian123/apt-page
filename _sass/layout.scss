@@ -396,17 +396,32 @@
 	}
 	
 	.screenshots-showcase {
-		gap: 0;
+		gap: 0; // Remove gap, use margins instead
+		overflow-x: visible;
+		justify-content: center;
+		padding: 0 4px; // Reduced padding
 	}
 	
-	// Hide side screenshots on mobile
+	// Show side screenshots as peek previews on mobile
 	.screenshot-side {
-		display: none;
+		display: block;
+		opacity: 0.25; // Heavy fade for peek effect
+		transform: scale(0.65); // Smaller scale
+		pointer-events: auto; // Allow future interactions
+		z-index: 1; // Behind main image
+		margin: 0 -60px; // Negative margins to overlap with main image
+		
+		// Subtle hover effect to indicate interactivity
+		&:active {
+			opacity: 0.4;
+			transform: scale(0.68);
+		}
 	}
 	
 	// Make main screenshot more prominent on mobile
 	.screenshot-main {
 		transform: scale(1);
+		z-index: 3; // Above side images
 	}
 	
 	.main-frame {
