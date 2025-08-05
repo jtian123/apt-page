@@ -15,6 +15,89 @@ app_name                                  : Apateu                              
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : The easiest Match-based marketplace for students and young professionals to effortlessly browse local subleases and secondhand items, submit custom bids and messages, and instantly connect with owners for seamless, trustworthy transactions.
 
+# Hero Section Content
+hero_title                                : "The All-in-One Platform for Short-Term Rentals, Subleases, and Marketplace, Powered by AI"  # Main headline text
+hero_subtitle                             : "Apateu combines peer-to-peer connection, AI-driven contract generation, secure payments, and fraud prevention to build a trusted community — all in one seamless app"
+
+# Image Assets - Centralized image management
+# University Alumni Section
+usc_logo                                  : assets/usc-logo.png
+ucla_logo                                 : assets/ucla-logo.png
+
+# Hero Image Section (16:9 aspect ratio recommended)
+# hero_image                                : assets/im1.jpg
+
+# Image Section - Three iPhone Screenshots with Glass Effect
+image_section_main                        : assets/IMG_0780.jpg  # Main center image (largest)
+image_section_left                        : assets/IMG_9671.jpg  # Left side image (smaller)
+image_section_right                       : assets/IMG_0782.jpg  # Right side image (smaller)
+
+# Text Section Content (between Alumni Trust and Timeline)
+text_section_title                        : "Beyond Trust — Legally Backed by AI"
+text_section_subtitle                     : "Transforming peer to peer rental with AI-generated agreements, fraud-proof payments, and verified users for a truly secure experience."
+
+# Text Section Verification Features
+text_section_campus_verify_icon           : "fas fa-graduation-cap"
+text_section_campus_verify_text           : ".edu Email Verification"
+text_section_id_verify_icon               : "fas fa-id-card"
+text_section_id_verify_text               : "Government ID Verification"
+text_section_social_verify_icon           : "fas fa-share-alt"
+text_section_social_verify_title          : "Social Connections"
+text_section_social_verify_text           : "Connect your social accounts for added trust"
+
+# Timeline Section Images
+timeline_card1_image                      : assets/smart_contract.png
+timeline_card1_image2                     : assets/IMG_0785.jpg
+timeline_card1_image3                     : assets/IMG_0786.jpg
+# timeline_card1_icon                       : assets/brain.png
+timeline_card2_image                      : assets/IMG_0783.jpg
+timeline_card2_image2                     : assets/IMG_0784.jpg
+# timeline_card2_icon                       : assets/building.columns@2x.png
+# timeline_card3_image                      : # assets/timeline-card3.jpg (optional - third card image)
+
+# Timeline Section Content - First Card Left Side Text
+timeline_card1_title                      : "Smart Contract - More Than Easy."
+timeline_card1_line1                      : "As a host, simply write your requirements in plain language—just like chatting."
+timeline_card1_line2                      : "Within two minutes, an AI-powered legal contract is ready for you and your tenant."
+timeline_card1_line3                      : "Click once, send for e-signature, and receive the signed contract by email in seconds."
+
+# Timeline Section Content - Second Card Left Side Text
+timeline_card2_title                      : "Centralized Management System"
+timeline_card2_line1                      : "Hosts can manage all contracts and payments from one centralized hub."
+timeline_card2_line2                      : "Tenants enjoy the fastest, simplest way to sign contracts and pay rent."
+timeline_card2_line3                      : "Access payment history, due date reminders, and contract records—all in one place."
+
+# Workflow Section Content
+workflow_title                            : "Your Subleasing Journey in 5 Smart Steps"
+workflow_step1_icon                       : "fas fa-heart"
+workflow_step1_title                      : "Find Your Perfect Match"
+workflow_step1_subtitle                   : "Swipe through options like a dating app and discover your ideal subtenant or host."
+
+workflow_step2_icon                       : "fas fa-video"
+workflow_step2_title                      : "Chat or Jump on Zoom"
+workflow_step2_subtitle                   : "Zoom has been integrated for quick video calls, so you can get to know each other better."
+
+workflow_step3_icon                       : "fas fa-file-signature"
+workflow_step3_title                      : "Make It Official by AI"
+workflow_step3_subtitle                   : "Hosts can create a contract in plain English and send it for a quick e-signature. Easy peasy!"
+
+workflow_step4_icon                       : "fas fa-bell"
+workflow_step4_title                      : "No More Missed Payments"
+workflow_step4_subtitle                   : "Our handy reminders keep rent on time every month—so you can relax."
+
+workflow_step5_icon                       : "fas fa-handshake"
+workflow_step5_title                      : "Wrap Up Smoothly"
+workflow_step5_subtitle                   : "When it's time to move out, hosts can return the security deposit hassle-free."
+
+# Marketplace Showcase Section Content
+marketplace_title                         : "Neighbor Marketplace"
+marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping—no shipping, no hassle, just local connections."
+marketplace_image                         : assets/my_mind2.jpg
+
+# App Store Images (already configured)
+# app_icon: assets/logo.png (configured above)
+# cover_image: assets/IMG_8432.JPG (configured below)
+
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 
@@ -78,34 +161,34 @@ features                                  :
 
 
 # Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
+topbar_color                              : "#ffffff"
+topbar_transparency                       : 0.95
+topbar_title_color                        : "#000000"
 
 cover_image                               : assets/IMG_8432.JPG                    # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.3
+cover_overlay_color                       : "#ffffff"
+cover_overlay_transparency                : 0.1
 
 device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
 
 body_background_color                     : "#ffffff"
 
-link_color                                : "#1d63ea"
+link_color                                : "#8b5cf6"
 
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
+app_title_color                           : "#000000"
+app_price_color                           : "#8b5cf6"
+app_description_color                     : "#000000"
 
 feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
+feature_text_color                        : "#000000"
 
-feature_icons_foreground_color            : "#8338ec"
-feature_icons_background_color            : "#e6e6e6"
+feature_icons_foreground_color            : "#8b5cf6"
+feature_icons_background_color            : "#f3f4f6"
 
-social_icons_foreground_color             : "#8338ec"
-social_icons_background_color             : "#e6e6e6"
+social_icons_foreground_color             : "#8b5cf6"
+social_icons_background_color             : "#f3f4f6"
 
-footer_text_color                         : "#8338ec"
+footer_text_color                         : "#000000"
 
 
 

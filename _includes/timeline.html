@@ -1,79 +1,70 @@
 <div class="sections-container">
-    <!-- SECTION 1: Search for the perfect home -->
-    <div class="section">
-      <div class="section-image">
-        <div class="image-carousel">
-          <img src="{{ 'assets/screenshot/2.png' | relative_url }}" alt="Search for the perfect home" />
-          <img src="{{ 'assets/screenshot/4.png' | relative_url }}" alt="Search for the perfect home" />
-          <img src="{{ 'assets/screenshot/3.png' | relative_url }}" alt="Search for the perfect home" />
-          <img src="{{ 'assets/screenshot/5.png' | relative_url }}" alt="Search for the perfect home" />
-          <img src="{{ 'assets/screenshot/6.png' | relative_url }}" alt="Search for the perfect home" />
+    <!-- SECTION 1: Search for the perfect home - Cohere-inspired layout -->
+    <div class="section section-cohere-style">
+      <!-- Left side: Text module -->
+      <div class="section-text-left">
+        <div class="brain-icon-center">
+          <img src="{{ site.timeline_card1_icon }}" alt="AI Brain" />
         </div>
-        <!-- 5 slides → 5 dots -->
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-  
-      <div class="section-text">
-        <h3>Search for the perfect home</h3>
+        <h3><strong>{{ site.timeline_card1_title }}</strong></h3>
         <p>
-          Browse Apateu’s listings by location and move-in/move-out dates.
-          Instead of generic tags, every listing displays the host’s own
-          description, so you get all the crucial details in their own words.
+          <i class="fas fa-comments"></i> {{ site.timeline_card1_line1 }}<br><br>
+          <i class="fas fa-brain"></i> {{ site.timeline_card1_line2 }}<br><br>
+          <i class="fas fa-signature"></i> {{ site.timeline_card1_line3 }}
         </p>
+      </div>
+      
+      <!-- Divider line -->
+      <div class="section-divider"></div>
+      
+      <!-- Right side: Image module -->
+      <div class="section-image-right">
+        {% if site.timeline_card1_image %}
+          <img src="{{ site.timeline_card1_image }}" alt="Search for the perfect home" />
+        {% else %}
+          <div class="image-placeholder-timeline">
+            <span>Card 1 Image</span>
+          </div>
+        {% endif %}
+        
+        {% if site.timeline_card1_image2 %}
+          <img src="{{ site.timeline_card1_image2 }}" alt="Search for the perfect home - Additional view" />
+        {% endif %}
+        
+        {% if site.timeline_card1_image3 %}
+          <img src="{{ site.timeline_card1_image3 }}" alt="Search for the perfect home - Third view" />
+        {% endif %}
       </div>
     </div>
   
-    <!-- SECTION 2: Express interest -->
-    <div class="section">
-      <div class="section-image">
-        <div class="image-carousel">
-          <img src="{{ 'assets/screenshot/8.png' | relative_url }}" alt="Like, Bid &amp; Match" />
-          <img src="{{ 'assets/screenshot/7.png' | relative_url }}" alt="Like, Bid &amp; Match" />
+    <!-- SECTION 2: Like, Bid & Match - Cohere-inspired layout -->
+    <div class="section section-cohere-style">
+      <!-- Left side: Text module -->
+      <div class="section-text-left">
+        <div class="brain-icon-center">
+          <img src="{{ site.timeline_card2_icon }}" alt="AI Brain" />
         </div>
-        <!-- 2 slides → 2 dots -->
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-  
-      <div class="section-text">
-        <h3>Like, Bid &amp; Match</h3>
+        <h3><strong>{{ site.timeline_card2_title }}</strong></h3>
         <p>
-          Spotted a listing you love? Tap the “Like” button to send your
-          interest. Hosts will review your profile and bid before deciding
-          whether to match with you.
+          <i class="fas fa-cogs"></i> {{ site.timeline_card2_line1 }}<br><br>
+          <i class="fas fa-bolt"></i> {{ site.timeline_card2_line2 }}<br><br>
+          <i class="fas fa-folder-open"></i> {{ site.timeline_card2_line3 }}
         </p>
+      </div>
+      
+      <!-- Divider line -->
+      <div class="section-divider"></div>
+      
+      <!-- Right side: Image module -->
+      <div class="section-image-right">
+        {% if site.timeline_card2_image %}
+          <img src="{{ site.timeline_card2_image }}" alt="{{ site.timeline_card2_title }}" />
+        {% else %}
+          <div class="image-placeholder-timeline">
+            <span>Card 2 Image</span>
+          </div>
+        {% endif %}
       </div>
     </div>
   
-    <!-- SECTION 4: Safety & Trust -->
-    <div class="section">
-      <div class="section-image">
-        <div class="image-carousel">
-          <img src="{{ 'assets/screenshot/9.png' | relative_url }}" alt="Safety &amp; Trust" />
-          <img src="{{ 'assets/screenshot/7.png' | relative_url }}" alt="Safety &amp; Trust" />
-        </div>
-        <!-- 2 slides → 2 dots -->
-        <div class="carousel-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-  
-      <div class="section-text">
-        <h3>Safety &amp; Trust</h3>
-        <p>
-          Apateu prioritizes your safety and trust. We verify user IDs and
-          student status (via .edu email). Every chat and post has a report
-          button so you can flag suspicious activity or content.
-        </p>
-      </div>
-    </div>
   </div>
