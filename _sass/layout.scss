@@ -1736,7 +1736,11 @@
 		flex: none;
 		width: 100%;  // Full width on mobile to eliminate white margins
 		margin: 0;    // Remove auto margins
+		padding-left: 0; // Remove desktop left padding on mobile
 		order: 1;     // Put image above text on mobile
+		display: flex;
+		justify-content: center; // Center the gallery
+		align-items: center;
 	}
 	
 	.timeline-gallery {
@@ -1754,10 +1758,14 @@
 	}
 	
 	.timeline-slide img {
-		width: 100%;           // Force full width on mobile to eliminate white space
+		width: auto;           // Let image determine its own width
 		height: auto;          // Maintain aspect ratio
-		object-fit: cover;   // Show wholesome screenshot without zoom-in
+		max-width: 100%;       // Don't exceed container width
+		max-height: 400px;     // Reasonable height limit for mobile
+		object-fit: contain;   // Show complete image without cropping
 		border-radius: 12px;
+		display: block;
+		margin: 0 auto;        // Center the image horizontally
 	}
 	
 	.timeline-nav {
