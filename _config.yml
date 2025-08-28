@@ -30,7 +30,7 @@ ucla_logo                                 : assets/ucla-logo.png
 # Image Section - Three iPhone Screenshots with Glass Effect
 image_section_main                        : assets/IMG_0780.jpg  # Main center image (largest)
 image_section_left                        : assets/IMG_9671.jpg  # Left side image (smaller)
-image_section_right                       : assets/IMG_0782.jpg  # Right side image (smaller)
+image_section_right                       : assets/IMG_1081.jpg  # Right side image (smaller)
 
 # Text Section Content (between Alumni Trust and Timeline)
 text_section_title                        : "Beyond Trust — Legally Backed by AI"
@@ -46,8 +46,8 @@ text_section_social_verify_title          : "Social Connections"
 text_section_social_verify_text           : "Connect your social accounts for added trust"
 
 # Timeline Section Images
-timeline_card1_image                      : assets/smart_contract.png
-timeline_card1_image2                     : assets/IMG_0785.jpg
+timeline_card1_image                      : assets/IMG_1081.jpg
+timeline_card1_image2                     : assets/IMG_1095.jpg
 timeline_card1_image3                     : assets/IMG_0786.jpg
 # timeline_card1_icon                       : assets/brain.png
 timeline_card2_image                      : assets/IMG_0783.jpg
@@ -91,7 +91,7 @@ workflow_step5_subtitle                   : "When it's time to move out, hosts c
 
 # Marketplace Showcase Section Content
 marketplace_title                         : "Neighbor Marketplace"
-marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping—no shipping, no hassle, just local connections."
+marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping—no shipping, no hassle, just local connections. You can only see items within 20 miles of your location."
 marketplace_image                         : assets/marketplace.jpg
 
 # App Store Images (already configured)
