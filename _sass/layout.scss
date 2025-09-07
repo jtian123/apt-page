@@ -891,6 +891,23 @@
 	line-height: 1.6;
 	margin: 0;
 	font-weight: 400;
+	
+	ul {
+		font-size: 1.8rem;
+		color: #64748b;
+		line-height: 1.6;
+		font-weight: 400;
+		margin: 10px 0;
+		padding-left: 20px;
+	}
+	
+	li {
+		font-size: 1.8rem;
+		color: #64748b;
+		line-height: 1.6;
+		font-weight: 400;
+		margin-bottom: 8px;
+	}
 }
 
 .marketplace-image {
@@ -954,6 +971,14 @@
 	
 	.marketplace-subtitle {
 		font-size: 1.6rem;
+		
+		ul {
+			font-size: 1.6rem;
+		}
+		
+		li {
+			font-size: 1.6rem;
+		}
 	}
 	
 	.marketplace-image {
@@ -988,6 +1013,14 @@
 	
 	.marketplace-subtitle {
 		font-size: 1.7rem;
+		
+		ul {
+			font-size: 1.7rem;
+		}
+		
+		li {
+			font-size: 1.7rem;
+		}
 	}
 }
 

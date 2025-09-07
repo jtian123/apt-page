@@ -2,6 +2,7 @@
 layout: page
 title: About
 include_in_header: true
+nav_order: 1
 ---
 
 # How it works
@@ -24,7 +25,7 @@ Stripe requires the following information during host onboarding to comply with 
 - **Government-issued ID** - Additional identity verification
 - **Bank account information** - For secure payment processing and payouts
 
-These requirements are mandated by federal law and financial regulations, not by Apateu. Stripe is a regulated financial services provider that must verify the identity of all users processing payments.
+These requirements are mandated by federal law and financial regulations, not by Apateu. [Stripe](https://stripe.com) is a regulated financial services provider that must verify the identity of all users processing payments.
 
 ## Payment Processing Timeline
 
@@ -44,4 +45,6 @@ Hosts have the right to request and hold security deposits until the end of the 
 
 ## Our Mission
 Apateu LLC is a California-registered limited liability company that builds and operates a mobile & web platform for apartment subleasing and second-hand goods. Our mission is to empower students and young professionals with a seamless, secure marketplace experience.
+
+At Apateu LLC, we strive to simplify housing transitions and peer-to-peer commerce by providing an intuitive, trustworthy platform that connects renters and sellers in one place.
 
