@@ -91,7 +91,7 @@ workflow_step5_subtitle                   : "When it's time to move out, hosts c
 
 # Marketplace Showcase Section Content
 marketplace_title                         : "Neighbor Marketplace"
-marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping:<ul><li>No shipping required</li><li>No hassle transactions</li><li>Local connections only</li><li>Items visible within 20 miles of your location</li></ul>"
+marketplace_subtitle                      : "Your campus community hub for buying, selling, and swapping: Local connections only. Items visible within 20 miles of your location."
 marketplace_image                         : assets/marketplace.jpg
 
 # App Store Images (already configured)

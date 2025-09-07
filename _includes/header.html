@@ -18,16 +18,24 @@
 		</div>
 		
 		<nav class="header-center">
-			<ul class="nav-menu">
+			<!-- Mobile hamburger button -->
+			<button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</button>
+			
+			<!-- Navigation menu -->
+			<ul class="nav-menu" id="navMenu">
 				{% assign header_pages = site.pages | where: "include_in_header", true | sort: "nav_order" %}
 				{% for page in header_pages %}
 					<li class="nav-item">
-						<a href="{{ page.url | relative_url }}" target="_self" class="nav-link">{{ page.title }}</a>
+						<a href="{{ page.url | relative_url }}" target="_self" class="nav-link" onclick="closeMobileMenu()">{{ page.title }}</a>
 					</li>
 				{% endfor %}
 				{% if site.presskit_download_link %}
 					<li class="nav-item">
-						<a href="{{ site.presskit_download_link }}" class="nav-link">Press Kit</a>
+						<a href="{{ site.presskit_download_link }}" class="nav-link" onclick="closeMobileMenu()">Press Kit</a>
 					</li>
 				{% endif %}
 			</ul>
@@ -38,3 +46,32 @@
 		</div>
 	</div>
 </header>
+
+
+<script>
+function toggleMobileMenu() {
+	const navMenu = document.getElementById('navMenu');
+	const toggleButton = document.querySelector('.mobile-menu-toggle');
+	
+	navMenu.classList.toggle('active');
+	toggleButton.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+	const navMenu = document.getElementById('navMenu');
+	const toggleButton = document.querySelector('.mobile-menu-toggle');
+	
+	navMenu.classList.remove('active');
+	toggleButton.classList.remove('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+	const navMenu = document.getElementById('navMenu');
+	const toggleButton = document.querySelector('.mobile-menu-toggle');
+	
+	if (!navMenu.contains(event.target) && !toggleButton.contains(event.target)) {
+		closeMobileMenu();
+	}
+});
+</script>
