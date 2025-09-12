@@ -30,6 +30,21 @@ nav_order: 2
           <a href="/career/social-media-marketing-creator-internship" target="_self" class="job-link">View Details →</a>
         </div>
       </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <h3 class="job-title">UGC Content Creator</h3>
+          <span class="job-type">Freelance</span>
+        </div>
+        <div class="job-details">
+          <p class="job-location">📍 Remote</p>
+          <p class="job-department">Marketing</p>
+          <p class="job-description">Create authentic user-generated content that showcases real experiences with Apateu. Produce engaging videos for TikTok, Instagram, and other social platforms.</p>
+        </div>
+        <div class="job-footer">
+          <a href="/career/ugc-content-creator" target="_self" class="job-link">View Details →</a>
+        </div>
+      </div>
     </div>
   </div>
 
