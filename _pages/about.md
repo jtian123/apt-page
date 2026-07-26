@@ -1,8 +1,9 @@
 ---
 layout: page
 title: About
-include_in_header: true
+include_in_header: false
 nav_order: 1
+noindex: true
 ---
 
 # How it works

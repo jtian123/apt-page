@@ -1,7 +1,9 @@
 ---
+published: false
 layout: page
 title: Social Media Marketing & Creator Internship
 include_in_header: false
+noindex: true
 ---
 
 <div class="job-detail-hero">

@@ -1,11 +1,12 @@
+url                                       : https://www.app.westapt.com
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : "Apateu — The AI housing discovery engine for Gen Z students"
 
 # App Info
 ios_app_id                                : 6745530032                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/us/app/apateu/id6745530032
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
@@ -13,11 +14,11 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/logo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Apateu                                         # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : The easiest Match-based marketplace for students and young professionals to effortlessly browse local subleases and secondhand items, submit custom bids and messages, and instantly connect with owners for seamless, trustworthy transactions.
+app_description                           : "Apateu is the AI housing discovery engine for Gen Z students — search 1,600+ indexed apartment buildings and verified student subleases in plain English across LA, New York, Boston and Seattle."
 
 # Hero Section Content
-hero_title                                : "The All-in-One Platform for Short-Term Rentals, Subleases, and Marketplace, Powered by AI"  # Main headline text
-hero_subtitle                             : "Apateu combines peer-to-peer connection, AI-driven contract generation, secure payments, and fraud prevention to build a trusted community — all in one seamless app"
+hero_title                                : "The AI housing discovery engine for Gen Z students"
+hero_subtitle                             : "Apartment + sublease search, finally AI-native."
 
 # Image Assets - Centralized image management
 # University Alumni Section
@@ -106,11 +107,11 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Apateu                                      # Enter your name or company name. This will be displayed in the footer.                              
 your_link                                 :                      
 your_city                                 : Los Angeles                               
-email_address                             : admin@westapt.com
+email_address                             : apateu.app@gmail.com
 linkedin_username                         :                                           
 linkedin_company                          : apateu                                         
 facebook_username                         :                                           
-instagram_username                        : apateu.app
+instagram_username                        : usc_apateu
 twitter_username                          : 
 github_username                           : 
 youtube_username                          :
@@ -223,3 +224,8 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+# ---- Apateu surfaces (main site links out to these; they are separate products) ----
+agent_url                                 : https://westapt.com/agent
+tob_url                                   : https://about.westapt.com
+contact_email                             : apateu.app@gmail.com

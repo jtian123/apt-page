@@ -3,536 +3,237 @@
 
 {% include head.html %}
 
-<body>
-    {% include header.html %}
-    
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <h1 class="hero-title">{{ site.hero_title }}</h1>
-            <p class="hero-subtitle">{{ site.hero_subtitle }}</p>
-            <div class="hero-cta">
-                {% if site.playstore_link %}
-                    <a class="store-button" href="{{site.playstore_link}}">
-                        <img class="store-badge" src="assets/playstore.png" alt="Get it on Google Play">
-                    </a>
-                {% endif %}
-                <a class="store-button appStoreLink" href="{{site.appstore_link}}">
-                    <img class="store-badge" src="assets/appstore.png" alt="Download on the App Store">
-                </a>
-            </div>
+<body class="ap-home">
+
+<a class="ap-skip" href="#main">Skip to content</a>
+
+{% include header.html %}
+
+<main id="main">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="ap-hero">
+  <div class="ap-blob ap-blob--v" style="width:820px;height:820px;top:-320px;right:-180px;opacity:.5"></div>
+  <div class="ap-blob ap-blob--c" style="width:620px;height:620px;bottom:-300px;left:-200px;opacity:.4"></div>
+  <div class="ap-wrap">
+    <div class="ap-hero__in">
+      <h1 class="ap-h1">The AI housing discovery engine<br><span class="ap-em">for Gen Z students.</span></h1>
+      <p class="ap-lede">Apartment + sublease search, finally <span style="white-space:nowrap">AI-native</span>.</p>
+      <div class="ap-hero__cta">
+        <a class="ap-btn ap-btn--primary" href="{{ site.agent_url }}" target="_blank" rel="noopener">
+          Open the housing agent <span class="ap-arrow">→</span>
+        </a>
+        <a class="ap-storebadge" href="{{ site.appstore_link }}" target="_blank" rel="noopener">
+          <img src="{{ 'assets/appstore.png' | relative_url }}" alt="Download Apateu on the App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 01 · HOUSING AGENT ══════════════ -->
+<section class="ap-section" id="housing-agent">
+  <div class="ap-wrap">
+    <div class="ap-split">
+      <div>
+        <div class="ap-eyebrow">01 — Housing agent · on the web</div>
+        <h2 class="ap-h2" style="margin-top:18px">Ask in plain English.<br><span class="ap-em">Get real buildings.</span></h2>
+        <p class="ap-lede" style="margin-top:22px">
+          We index apartment buildings straight from the property managers' own sites — live prices,
+          per-bed rates, floor plans, concessions. Then an agent answers on top of it.
+        </p>
+        <ul class="ap-feats">
+          <li><span class="n">·</span><p><b>Natural-language search</b> over our own index — grid + map, per-bed prices, current availability.</p></li>
+          <li><span class="n">·</span><p><b>Real answers</b> — neighborhoods, commute times, and what each building is actually like.</p></li>
+          <li><span class="n">·</span><p><b>Subleases side by side</b> with operator inventory, so student listings and buildings show up in one search.</p></li>
+          <li><span class="n">·</span><p><b>Roommate matching</b> ranked by lifestyle fit, not randomness.</p></li>
+        </ul>
+        <div style="margin-top:38px">
+          <a class="ap-btn ap-btn--primary" href="{{ site.agent_url }}" target="_blank" rel="noopener">
+            Try it <span class="ap-arrow">→</span>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <!-- Image Section - Three iPhone Screenshots with Glass Effect -->
-    <section class="image-section">
-        <div class="image-container">
-            <div class="screenshots-showcase">
-                <!-- Left Screenshot (hidden on mobile) -->
-                <div class="screenshot-card screenshot-side screenshot-left">
-                    <div class="glass-frame">
-                        {% if site.image_section_left %}
-                            <img src="{{ site.image_section_left }}" alt="App Screenshot Left" class="screenshot-image">
-                        {% else %}
-                            <div class="screenshot-placeholder">Left Screenshot</div>
-                        {% endif %}
-                    </div>
-                </div>
-                
-                <!-- Main Screenshot (always visible) -->
-                <div class="screenshot-card screenshot-main">
-                    <div class="glass-frame main-frame">
-                        {% if site.image_section_main %}
-                            <img src="{{ site.image_section_main }}" alt="Main App Screenshot" class="screenshot-image main-image">
-                        {% else %}
-                            <div class="screenshot-placeholder">Main Screenshot</div>
-                        {% endif %}
-                    </div>
-                </div>
-                
-                <!-- Right Screenshot (hidden on mobile) -->
-                <div class="screenshot-card screenshot-side screenshot-right">
-                    <div class="glass-frame">
-                        {% if site.image_section_right %}
-                            <img src="{{ site.image_section_right }}" alt="App Screenshot Right" class="screenshot-image">
-                        {% else %}
-                            <div class="screenshot-placeholder">Right Screenshot</div>
-                        {% endif %}
-                    </div>
-                </div>
+      <div class="ap-split__media">
+        <div class="ap-mock">
+          <div class="ap-mock__tag ap-mock__tag--dark" style="top:26px;left:26px">how do people like this building?</div>
+          <div class="ap-mock__tag ap-mock__tag--amber" style="top:74px;right:26px">0.8 mi to campus</div>
+          <div class="ap-mock__center" style="margin-top:96px">
+            <div class="ap-mock__toggle">
+              <span class="is-on">Housing Agent</span><span>Sublease</span>
             </div>
-        </div>
-    </section>
-
-    <!-- University Explanatory Section -->
-    <section class="university-info-section">
-        <div class="university-info-container">
-            <p class="university-info-text">
-                <strong>University-Friendly:</strong> Every user must verify their .edu email or ID. A custom university logo is displayed to foster a safer, campus-oriented community.
-            </p>
-            
-            <!-- Verification Cards -->
-            <div class="verification-cards">
-                <div class="verification-card">
-                    <div class="verification-icon">
-                        <i class="{{ site.text_section_campus_verify_icon }}"></i>
-                    </div>
-                    <div class="verification-content">
-                        <h3 class="verification-title">{{ site.text_section_campus_verify_text }}</h3>
-                        <div class="verification-status">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Verified</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="verification-card">
-                    <div class="verification-icon">
-                        <i class="{{ site.text_section_id_verify_icon }}"></i>
-                    </div>
-                    <div class="verification-content">
-                        <h3 class="verification-title">{{ site.text_section_id_verify_text }}</h3>
-                        <div class="verification-status">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Verified</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="verification-card">
-                    <div class="verification-icon">
-                        <i class="{{ site.text_section_social_verify_icon }}"></i>
-                    </div>
-                    <div class="verification-content">
-                        <h3 class="verification-title">{{ site.text_section_social_verify_title }}</h3>
-                        <p class="verification-subtitle">{{ site.text_section_social_verify_text }}</p>
-                        <div class="social-icons">
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="ap-mock__bar" style="width:100%">
+              <p>a furnished 2b2b near USC, under $1,600 a bed</p>
+              <div class="ap-mock__send">↑</div>
             </div>
+            <div class="ap-mock__tag ap-mock__tag--violet" style="position:static;margin-top:28px">roommate match</div>
+          </div>
         </div>
-    </section>
+        <p class="ap-muted" style="margin-top:16px;font-size:13.5px;font-family:var(--mono);letter-spacing:.04em;text-align:center">
+          Illustrative — open the agent for live results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Workflow Section -->
-    <section class="workflow-section">
-        <div class="workflow-container">
-            <h2 class="workflow-title">{{ site.workflow_title }}</h2>
-            
-            <div class="workflow-timeline">
-                <!-- Step 1 -->
-                <div class="workflow-step" data-step="1">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <i class="{{ site.workflow_step1_icon }}"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 class="step-title">{{ site.workflow_step1_title }}</h3>
-                        <p class="step-subtitle">{{ site.workflow_step1_subtitle }}</p>
-                    </div>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="workflow-step" data-step="2">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <i class="{{ site.workflow_step2_icon }}"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 class="step-title">{{ site.workflow_step2_title }}</h3>
-                        <p class="step-subtitle">{{ site.workflow_step2_subtitle }}</p>
-                    </div>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="workflow-step" data-step="3">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <i class="{{ site.workflow_step3_icon }}"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 class="step-title">{{ site.workflow_step3_title }}</h3>
-                        <p class="step-subtitle">{{ site.workflow_step3_subtitle }}</p>
-                    </div>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="workflow-step" data-step="4">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <i class="{{ site.workflow_step4_icon }}"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 class="step-title">{{ site.workflow_step4_title }}</h3>
-                        <p class="step-subtitle">{{ site.workflow_step4_subtitle }}</p>
-                    </div>
-                </div>
-                
-                <!-- Step 5 -->
-                <div class="workflow-step" data-step="5">
-                    <div class="step-number">5</div>
-                    <div class="step-icon">
-                        <i class="{{ site.workflow_step5_icon }}"></i>
-                    </div>
-                    <div class="step-content">
-                        <h3 class="step-title">{{ site.workflow_step5_title }}</h3>
-                        <p class="step-subtitle">{{ site.workflow_step5_subtitle }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Text Section -->
-    <section class="text-section">
-        <div class="text-container">
-            <h2 class="text-title">{{ site.text_section_title }}</h2>
-            <p class="text-subtitle">{{ site.text_section_subtitle }}</p>
-        </div>
-    </section>
-
-    <!-- Timeline Section - Simplified Card Style -->
-    <section class="timeline-section">
-        <div class="timeline-container-simple">
-            <!-- Timeline Card 1: Smart Contract -->
-            <div class="timeline-card">
-                <div class="timeline-text">
-                    <h3 class="timeline-title">{{ site.timeline_card1_title }}</h3>
-                    <div class="timeline-content">
-                        <p><i class="fas fa-comments"></i> {{ site.timeline_card1_line1 }}</p>
-                        <p><i class="fas fa-brain"></i> {{ site.timeline_card1_line2 }}</p>
-                        <p><i class="fas fa-signature"></i> {{ site.timeline_card1_line3 }}</p>
-                    </div>
-                </div>
-                <div class="timeline-image">
-                    {% if site.timeline_card1_image %}
-                        <div class="timeline-gallery" data-gallery="1">
-                            <!-- Image 1 (always visible by default) -->
-                            <div class="timeline-slide active" data-slide="0">
-                                <img src="{{ site.timeline_card1_image }}" alt="{{ site.timeline_card1_title }} - Image 1" />
-                            </div>
-                            
-                            <!-- Image 2 (if exists) -->
-                            {% if site.timeline_card1_image2 %}
-                                <div class="timeline-slide" data-slide="1">
-                                    <img src="{{ site.timeline_card1_image2 }}" alt="{{ site.timeline_card1_title }} - Image 2" />
-                                </div>
-                            {% endif %}
-                            
-                            <!-- Image 3 (if exists) -->
-                            {% if site.timeline_card1_image3 %}
-                                <div class="timeline-slide" data-slide="2">
-                                    <img src="{{ site.timeline_card1_image3 }}" alt="{{ site.timeline_card1_title }} - Image 3" />
-                                </div>
-                            {% endif %}
-                                
-                            <!-- Only show navigation if there are multiple images -->
-                            {% if site.timeline_card1_image2 %}
-                                <div class="timeline-nav">
-                                    <div class="timeline-dots">
-                                        <span class="timeline-dot active" data-slide="0"></span>
-                                        <span class="timeline-dot" data-slide="1"></span>
-                                        {% if site.timeline_card1_image3 %}
-                                            <span class="timeline-dot" data-slide="2"></span>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                
-                                <!-- Navigation arrows -->
-                                <div class="timeline-arrows">
-                                    <button class="timeline-arrow timeline-arrow-left" data-direction="prev" aria-label="Previous image">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </button>
-                                    <button class="timeline-arrow timeline-arrow-right" data-direction="next" aria-label="Next image">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </button>
-                                </div>
-                            {% endif %}
-                        </div>
-                    {% else %}
-                        <div class="timeline-placeholder">
-                            <span>Timeline Image 1</span>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-
-            <!-- Timeline Card 2: Management System -->
-            <div class="timeline-card">
-                <div class="timeline-text">
-                    <h3 class="timeline-title">{{ site.timeline_card2_title }}</h3>
-                    <div class="timeline-content">
-                        <p><i class="fas fa-cogs"></i> {{ site.timeline_card2_line1 }}</p>
-                        <p><i class="fas fa-bolt"></i> {{ site.timeline_card2_line2 }}</p>
-                        <p><i class="fas fa-folder-open"></i> {{ site.timeline_card2_line3 }}</p>
-                    </div>
-                </div>
-                <div class="timeline-image">
-                    {% if site.timeline_card2_image %}
-                        <div class="timeline-gallery" data-gallery="2">
-                            <!-- Image 1 (always visible by default) -->
-                            <div class="timeline-slide active" data-slide="0">
-                                <img src="{{ site.timeline_card2_image }}" alt="{{ site.timeline_card2_title }} - Image 1" />
-                            </div>
-                            
-                            <!-- Image 2 (if exists) -->
-                            {% if site.timeline_card2_image2 %}
-                                <div class="timeline-slide" data-slide="1">
-                                    <img src="{{ site.timeline_card2_image2 }}" alt="{{ site.timeline_card2_title }} - Image 2" />
-                                </div>
-                                
-                                <!-- Only show navigation if there are multiple images -->
-                                <div class="timeline-nav">
-                                    <div class="timeline-dots">
-                                        <span class="timeline-dot active" data-slide="0"></span>
-                                        <span class="timeline-dot" data-slide="1"></span>
-                                    </div>
-                                </div>
-                                
-                                <!-- Navigation arrows -->
-                                <div class="timeline-arrows">
-                                    <button class="timeline-arrow timeline-arrow-left" data-direction="prev" aria-label="Previous image">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </button>
-                                    <button class="timeline-arrow timeline-arrow-right" data-direction="next" aria-label="Next image">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </button>
-                                </div>
-                            {% endif %}
-                        </div>
-                    {% else %}
-                        <div class="timeline-placeholder">
-                            <span>Timeline Image 2</span>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Marketplace Showcase Section -->
-    <section class="marketplace-section">
-        <div class="marketplace-container">
-            <div class="marketplace-card">
-                <!-- Left side: Text content -->
-                <div class="marketplace-text">
-                    <h2 class="marketplace-title">{{ site.marketplace_title }}</h2>
-                    <p class="marketplace-subtitle">{{ site.marketplace_subtitle }}</p>
-                </div>
-                
-                <!-- Right side: Image -->
-                <div class="marketplace-image">
-                    {% if site.marketplace_image %}
-                        <img src="{{ site.marketplace_image }}" alt="{{ site.marketplace_title }}" />
-                    {% else %}
-                        <div class="marketplace-placeholder">
-                            <span>Marketplace Image</span>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Alumni Trust Section -->
-    <section class="trust-section">
-        <div class="trust-container">
-            <p class="trust-text">Developed by USC and UCLA Alumni</p>
-            <div class="university-logos">
-                <div class="logo-placeholder usc-logo with-logo">
-                    <img src="{{ site.usc_logo }}" alt="USC">
-                </div>
-                <div class="logo-placeholder ucla-logo with-logo">
-                    <img src="{{ site.ucla_logo }}" alt="UCLA">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Container -->
-    <div class="container">
-        <!-- ========== FOOTER (should span all columns, but your CSS has f for full width) ========== -->
-        {% include footer.html %}
-        {% include appstoreimages.html %}
+<!-- ══════════════ COVERAGE ══════════════ -->
+<section class="ap-section ap-section--tight" id="coverage">
+  <div class="ap-wrap">
+    <div style="max-width:640px">
+      <div class="ap-eyebrow">Where we're live</div>
+      <h2 class="ap-h2" style="margin-top:18px">Four metros indexed.<br><span class="ap-em">The Bay is next.</span></h2>
+      <p class="ap-lede" style="margin-top:20px">
+        Every building is read from the operator's own site and refreshed on a cadence, so you see the
+        latest advertised price we found — not a stale copy of a copy.
+      </p>
     </div>
 
-    <script>
-        // Run after DOM is ready
-        document.addEventListener('DOMContentLoaded', () => {
-          // Mobile Image Swapping Functionality
-          function initMobileImageSwapping() {
-            // Only run on mobile devices
-            if (window.innerWidth <= 768) {
-              const mainImage = document.querySelector('.screenshot-main .screenshot-image');
-              const leftImage = document.querySelector('.screenshot-left .screenshot-image');
-              const rightImage = document.querySelector('.screenshot-right .screenshot-image');
-              const leftCard = document.querySelector('.screenshot-left');
-              const rightCard = document.querySelector('.screenshot-right');
-              
-              if (!mainImage || !leftImage || !rightImage) return;
-              
-              // Store original sources
-              const images = {
-                main: mainImage.src,
-                left: leftImage.src,
-                right: rightImage.src
-              };
-              
-              // Left image click handler
-              leftCard.addEventListener('click', () => {
-                const newMain = images.left;
-                const newLeft = images.main;
-                
-                // Update sources
-                mainImage.src = newMain;
-                leftImage.src = newLeft;
-                
-                // Update stored references
-                images.main = newMain;
-                images.left = newLeft;
-                
-                // Add brief highlight effect
-                leftCard.style.transform = leftCard.style.transform.replace('scale(0.65)', 'scale(0.7)');
-                setTimeout(() => {
-                  leftCard.style.transform = leftCard.style.transform.replace('scale(0.7)', 'scale(0.65)');
-                }, 200);
-              });
-              
-              // Right image click handler
-              rightCard.addEventListener('click', () => {
-                const newMain = images.right;
-                const newRight = images.main;
-                
-                // Update sources
-                mainImage.src = newMain;
-                rightImage.src = newRight;
-                
-                // Update stored references
-                images.main = newMain;
-                images.right = newRight;
-                
-                // Add brief highlight effect
-                rightCard.style.transform = rightCard.style.transform.replace('scale(0.65)', 'scale(0.7)');
-                setTimeout(() => {
-                  rightCard.style.transform = rightCard.style.transform.replace('scale(0.7)', 'scale(0.65)');
-                }, 200);
-              });
-            }
-          }
-          
-          // Initialize mobile image swapping
-          initMobileImageSwapping();
-          
-          // Re-initialize on window resize
-          let resizeTimeout;
-          window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(initMobileImageSwapping, 250);
-          });
-          // Simple Timeline Gallery Functionality
-          document.querySelectorAll('.timeline-gallery').forEach(gallery => {
-            const slides = gallery.querySelectorAll('.timeline-slide');
-            const dots = gallery.querySelectorAll('.timeline-dot');
-            const arrows = gallery.querySelectorAll('.timeline-arrow');
-            
-            // Only proceed if there are multiple slides
-            if (slides.length <= 1) return;
-            
-            let currentSlide = 0;
-            
-            function showSlide(index) {
-              // Remove active class from all slides and dots
-              slides.forEach(slide => slide.classList.remove('active'));
-              dots.forEach(dot => dot.classList.remove('active'));
-              
-              // Add active class to current slide and dot
-              if (slides[index]) {
-                slides[index].classList.add('active');
-                dots[index]?.classList.add('active');
-                currentSlide = index;
-              }
-            }
-            
-            function nextSlide() {
-              const next = (currentSlide + 1) % slides.length;
-              showSlide(next);
-            }
-            
-            function prevSlide() {
-              const prev = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
-              showSlide(prev);
-            }
-            
-            // Dot navigation
-            dots.forEach((dot, index) => {
-              dot.addEventListener('click', () => {
-                showSlide(index);
-              });
-            });
-            
-            // Arrow navigation
-            arrows.forEach(arrow => {
-              arrow.addEventListener('click', () => {
-                const direction = arrow.getAttribute('data-direction');
-                if (direction === 'next') {
-                  nextSlide();
-                } else if (direction === 'prev') {
-                  prevSlide();
-                }
-              });
-            });
-            
-            // Touch/swipe support
-            let startX = 0;
-            
-            gallery.addEventListener('touchstart', (e) => {
-              startX = e.touches[0].clientX;
-            });
-            
-            gallery.addEventListener('touchend', (e) => {
-              const endX = e.changedTouches[0].clientX;
-              const diff = startX - endX;
-              
-              if (Math.abs(diff) > 50) { // Minimum swipe distance
-                if (diff > 0) {
-                  // Swipe left - next slide
-                  const next = (currentSlide + 1) % slides.length;
-                  showSlide(next);
-                } else {
-                  // Swipe right - previous slide
-                  const prev = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
-                  showSlide(prev);
-                }
-              }
-            });
-          });
-          
-          // Legacy code for other carousels
-          document.querySelectorAll('.section-image').forEach(wrapper => {
-            const carousel = wrapper.querySelector('.image-carousel');
-            const dots = wrapper.querySelectorAll('.dot');
-      
-            if (!carousel || dots.length === 0) return;
-      
-            carousel.addEventListener('scroll', () => {
-              const slideWidth = carousel.clientWidth;
-              const index = Math.round(carousel.scrollLeft / slideWidth);
-              const activeIndex = Math.min(Math.max(index, 0), dots.length - 1);
-      
-              dots.forEach((dot, i) => {
-                if (i === activeIndex) dot.classList.add('active');
-                else dot.classList.remove('active');
-              });
-            });
-      
-            if (dots[0]) {
-              dots[0].classList.add('active');
-            }
-          });
-        });
-    </script>
+    <div class="ap-map">
+      {% include coverage.html %}
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 02 · iOS APP ══════════════ -->
+<section class="ap-section" id="ios-app">
+  <div class="ap-wrap">
+    <div class="ap-split ap-split--flip">
+      <div class="ap-split__media">
+        <div style="display:flex;gap:22px;justify-content:center;align-items:flex-start">
+          <div style="width:47%;border-radius:30px;overflow:hidden;box-shadow:var(--shadow-lift);border:1px solid rgba(255,255,255,.85)">
+            <img src="{{ 'assets/app-sublease-browse.png' | relative_url }}" width="1290" height="2796" loading="lazy" decoding="async"
+                 alt="Verified student subleases in the Apateu iOS app, with the Housing Agent and Sublease tabs"
+                 style="width:100%;height:auto;display:block">
+          </div>
+          <div style="width:47%;border-radius:30px;overflow:hidden;box-shadow:var(--shadow-lift);border:1px solid rgba(255,255,255,.85);margin-top:44px">
+            <img src="{{ 'assets/app-smart-contract.png' | relative_url }}" width="1290" height="2796" loading="lazy" decoding="async"
+                 alt="The AI Contract Assistant drafting a sublease agreement in the Apateu iOS app"
+                 style="width:100%;height:auto;display:block">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="ap-eyebrow">02 — Subleases · on iOS</div>
+        <h2 class="ap-h2" style="margin-top:18px">Sublet to a verified student,<br><span class="ap-em">on a real agreement.</span></h2>
+        <p class="ap-lede" style="margin-top:22px">
+          Summer internship, study abroad, early graduation — a sublease always comes down to trust
+          and paperwork. The app handles both.
+        </p>
+        <ul class="ap-feats">
+          <li><span class="n">·</span><p><b>AI-drafted sublease agreement.</b> Describe your terms in plain words; the app writes a clean, state-aware agreement in about a minute.</p></li>
+          <li><span class="n">·</span><p><b>Signed in the app.</b> Both sides e-sign on their phone — no printing, no PDFs passed around over text.</p></li>
+          <li><span class="n">·</span><p><b>University verification.</b> Students confirm their campus with a .edu email or student ID, so you know who you are renting to.</p></li>
+          <li><span class="n">·</span><p><b>Built-in chat.</b> Ask about the room, agree on dates, keep the whole thread in one place.</p></li>
+        </ul>
+        <div style="margin-top:32px">
+          <a class="ap-storebadge" href="{{ site.appstore_link }}" target="_blank" rel="noopener">
+            <img src="{{ 'assets/appstore.png' | relative_url }}" alt="Download Apateu on the App Store">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOR OPERATORS · A2A ══════════════ -->
+<section class="ap-section ap-section--tight" id="operators">
+  <div class="ap-wrap">
+    <div class="ap-dark">
+      <div style="max-width:680px">
+        <div class="ap-eyebrow">For operators · in development</div>
+        <h2 class="ap-h2" style="margin-top:18px;color:var(--paper)">
+          The same engine, pointed at <span class="ap-em">your leasing workflow.</span>
+        </h2>
+        <p class="ap-body" style="margin-top:20px;font-size:19px;line-height:1.55">
+          Students talk to one agent. We are building it to work <b style="color:var(--paper)">agent-to-agent</b>
+          with the systems a property manager already runs — grounded in your inventory, your SOPs and your PMS,
+          not a generic chatbot bolted onto a website. Here is the workflow we're building toward:
+        </p>
+      </div>
+
+      <!-- A2A workflow plot -->
+      <div class="ap-scroller" style="margin-top:46px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+        <svg viewBox="0 0 1040 250" style="width:100%;min-width:560px;height:auto" role="img"
+             aria-label="Agent-to-agent workflow: student demand enters one conversation, the Apateu agent parses and routes it against the operator's systems, and hands work back to the operator side.">
+          <defs>
+            <marker id="a2aArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+              <path d="M0.5,1 L9,5 L0.5,9 Z" fill="#c9a2f4"/>
+            </marker>
+            <marker id="a2aBack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0.5,1 L9,5 L0.5,9 Z" fill="rgba(246,242,236,.45)"/>
+            </marker>
+          </defs>
+
+          <!-- stage 1 · demand -->
+          <rect x="2" y="46" width="252" height="120" rx="18" fill="rgba(246,242,236,.05)" stroke="rgba(246,242,236,.28)" stroke-width="1.4"/>
+          <text x="26" y="78" font-family="Geist Mono,monospace" font-size="11.5" letter-spacing="2" fill="#f4b8a2">STUDENT DEMAND</text>
+          <text x="26" y="108" font-family="Instrument Serif,serif" font-size="25" fill="#f6f2ec">One conversation</text>
+          <text x="26" y="136" font-family="Geist,sans-serif" font-size="14" fill="rgba(246,242,236,.62)">search · question · tour · apply</text>
+
+          <path d="M262,106 L336,106" stroke="#c9a2f4" stroke-width="2.2" fill="none" marker-end="url(#a2aArrow)"/>
+
+          <!-- stage 2 · the engine -->
+          <rect x="346" y="30" width="300" height="152" rx="20" fill="rgba(201,162,244,.1)" stroke="#c9a2f4" stroke-width="1.8"/>
+          <text x="370" y="62" font-family="Geist Mono,monospace" font-size="11.5" letter-spacing="2" fill="#c9a2f4">APATEU AGENT · A2A</text>
+          <text x="370" y="92" font-family="Instrument Serif,serif" font-size="25" fill="#f6f2ec">Parse · route · merge</text>
+          <g font-family="Geist Mono,monospace" font-size="12" fill="rgba(246,242,236,.72)">
+            <rect x="370" y="108" width="106" height="26" rx="13" fill="rgba(246,242,236,.08)"/>
+            <text x="386" y="125">your PMS</text>
+            <rect x="486" y="108" width="112" height="26" rx="13" fill="rgba(246,242,236,.08)"/>
+            <text x="502" y="125">your SOPs</text>
+            <rect x="370" y="142" width="228" height="26" rx="13" fill="rgba(246,242,236,.08)"/>
+            <text x="386" y="159">1,600+ indexed buildings</text>
+          </g>
+
+          <path d="M654,106 L728,106" stroke="#c9a2f4" stroke-width="2.2" fill="none" marker-end="url(#a2aArrow)"/>
+
+          <!-- stage 3 · outcomes -->
+          <rect x="738" y="46" width="300" height="120" rx="18" fill="rgba(246,242,236,.05)" stroke="rgba(246,242,236,.28)" stroke-width="1.4"/>
+          <text x="762" y="78" font-family="Geist Mono,monospace" font-size="11.5" letter-spacing="2" fill="#f4b8a2">OPERATOR SIDE</text>
+          <text x="762" y="108" font-family="Instrument Serif,serif" font-size="25" fill="#f6f2ec">Work handed back</text>
+          <text x="762" y="136" font-family="Geist,sans-serif" font-size="14" fill="rgba(246,242,236,.62)">tour · application · lease · renewal</text>
+
+          <!-- feedback loop -->
+          <path d="M888,176 C888,220 300,220 128,220 L128,178" stroke="rgba(246,242,236,.3)" stroke-width="1.5"
+                fill="none" stroke-dasharray="6 6" marker-end="url(#a2aBack)"/>
+          <text x="508" y="243" text-anchor="middle" font-family="Geist Mono,monospace" font-size="11"
+                letter-spacing="1.6" fill="rgba(246,242,236,.5)">DESIGNED WORKFLOW — NOT YET IN PRODUCTION</text>
+        </svg>
+      </div>
+
+      <div style="margin-top:40px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+        <a class="ap-btn ap-btn--ghost" href="{{ site.tob_url }}" target="_blank" rel="noopener">
+          See the operator platform <span class="ap-arrow">→</span>
+        </a>
+        <span class="ap-body" style="font-family:var(--mono);font-size:12.5px;letter-spacing:.05em">
+          Design stage — no operator integration is live or signed yet.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FINAL CTA ══════════════ -->
+<section class="ap-section ap-section--tight">
+  <div class="ap-wrap ap-cta">
+    <h2 class="ap-h2">Find your next place<br><span class="ap-em">in one conversation.</span></h2>
+    <div class="ap-cta__row">
+      <a class="ap-btn ap-btn--primary" href="{{ site.agent_url }}" target="_blank" rel="noopener">
+        Open the housing agent <span class="ap-arrow">→</span>
+      </a>
+      <a class="ap-storebadge" href="{{ site.appstore_link }}" target="_blank" rel="noopener">
+        <img src="{{ 'assets/appstore.png' | relative_url }}" alt="Download Apateu on the App Store">
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+{% include footer.html %}
+
 </body>
 </html>

@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-May 07 2025
+July 25 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -38,6 +38,21 @@ We use the information we collect to:
 - **Communicate:** Send account confirmations, support responses, security alerts, and promotional messages (you can opt out).  
 - **Security & Fraud Prevention:** Detect and prevent unauthorized access, abuse, or fraudulent activity.  
 - **Analytics & Research:** Understand usage trends and make data-driven improvements.  
+- **Training & Improving the Apateu Housing Agent:** Use Platform content and interactions — including searches and questions you ask the housing agent, listing content, and the agent's responses — to train, evaluate, and improve Apateu's AI models and housing agent.  
+
+### 2.1. AI Training — What This Means
+
+We use data from the Platform to train and improve the Apateu housing agent so it gives better, more accurate answers about housing.
+
+**What we may use for training:** the questions and searches you send to the housing agent, the agent's responses, listing content you publish (which is already public on the Platform), and aggregated usage patterns.
+
+**What we do not use for training:** your password or authentication credentials, government-issued ID or student-ID images submitted for verification, and payment or financial account details.
+
+**Before training, we remove direct identifiers** (such as your name, email address and phone number) from the content wherever reasonably possible, so training data is de-identified.
+
+**Private messages.** We do not use the content of your one-to-one chats with another user to train our models unless you have given us separate, explicit consent, or the message has been reported to us for safety or fraud review.
+
+**Your choice.** You can ask us not to use your content for AI training by emailing **apateu.app@gmail.com** with the subject "AI training opt-out." Opting out does not affect your ability to use the Platform, and does not apply to models already trained before your request.
 
 ---
 
@@ -63,12 +78,15 @@ Any content you post publicly (e.g., listing details, public chat messages) is v
 You can view or update your account information at any time via the App’s settings.
 
 ### 4.2. Communications  
-You may opt out of marketing emails by following the unsubscribe link or contacting us at support@apateu.com.
+You may opt out of marketing emails by following the unsubscribe link or contacting us at apateu.app@gmail.com.
 
 ### 4.3. Location Permissions  
 You can enable or disable location access in your device settings. If you revoke permission, location-based features will be limited.
 
-### 4.4. Cookies  
+### 4.4. AI Training  
+You may opt out of having your content used to train Apateu's AI models — see section 2.1. Email **apateu.app@gmail.com** with the subject "AI training opt-out."
+
+### 4.5. Cookies  
 Most browsers allow you to refuse or delete cookies via their settings menus. Note that disabling cookies may affect Platform functionality.
 
 ---
@@ -85,7 +103,7 @@ We follow a strict data minimization policy to comply with GDPR, CCPA, and other
 - **Account Data:** Deleted within **30 days** of user request or account closure.
 - **Transaction Data:** Retained for up to **7 years** for legal, financial, and regulatory compliance.
 - **Backup Data:** Backups are automatically purged within **30 days**.
-- **Deletion Requests:** Users can request deletion by emailing **admin@westapt.com** or using in-app account settings. We process all verified requests within **30 days**.
+- **Deletion Requests:** Users can request deletion by emailing **apateu.app@gmail.com** or using in-app account settings. We process all verified requests within **30 days**.
 
 ---
 
@@ -119,7 +137,7 @@ Your information may be processed in the United States or other jurisdictions wi
 - **Rectification:** Ask us to correct inaccurate information.  
 - **Deletion:** Request deletion of your personal data (subject to legal restrictions).  
 - **Opt-Out (CCPA):** California residents may opt out of the sale of personal information.  
-To exercise these rights, contact us at support@apateu.com. We will respond within the timeframe required by law.
+To exercise these rights, contact us at apateu.app@gmail.com. We will respond within the timeframe required by law.
 
 ---
 
@@ -131,7 +149,7 @@ We may update this Policy from time to time. We will post the revised version wi
 
 ## 12. Contact Us
 
-For questions or concerns about this Privacy Policy, please email us at **admin@westapt.com**.
+For questions or concerns about this Privacy Policy, please email us at **apateu.app@gmail.com**.
 
 ---
 
