@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apateu — Investor materials</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f2ec; --paper-2:#fffdf9; --ink:#15130f; --ink-2:#4a453c; --ink-3:#665f53;
+    --line:#e3dcd0; --violet:#8b30e8; --violet-deep:#6f1fc4;
+    --serif:'Instrument Serif',Georgia,serif; --sans:'Geist',-apple-system,sans-serif;
+    --mono:'Geist Mono',ui-monospace,Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{overflow-x:clip}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--sans);
+    min-height:100vh; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; padding:48px 24px; position:relative; overflow-x:clip;
+    -webkit-font-smoothing:antialiased;
+  }
+  .blob{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;z-index:0}
+  .wrap{position:relative;z-index:1;width:100%;max-width:640px;text-align:center}
+  .brand{font-family:var(--serif);font-size:30px;letter-spacing:-.01em}
+  .brand a{color:inherit;text-decoration:none}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-top:14px}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,7vw,54px);line-height:1.05;letter-spacing:-.015em;margin-top:34px}
+  h1 em{font-style:italic;color:var(--violet)}
+  .lede{color:var(--ink-2);font-size:16.5px;margin-top:14px}
+  .cards{display:flex;flex-direction:column;gap:14px;margin-top:44px;text-align:left}
+  .cardlink{
+    display:flex;align-items:center;gap:18px;background:var(--paper-2);
+    border:1px solid var(--line);border-radius:18px;padding:22px 26px;
+    text-decoration:none;color:inherit;transition:border-color .15s,transform .15s,box-shadow .15s;
+  }
+  a.cardlink:hover{border-color:var(--violet);transform:translateY(-2px);box-shadow:0 20px 50px rgba(21,19,15,.08)}
+  .cardlink .ico{
+    width:46px;height:46px;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:rgba(139,48,232,.08);color:var(--violet);font-size:20px;
+  }
+  .cardlink .t{font-family:var(--serif);font-size:23px;line-height:1.1}
+  .cardlink .d{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:5px}
+  .cardlink .arrow{margin-left:auto;color:var(--violet);font-size:20px}
+  .cardlink.soon{opacity:.55;cursor:default}
+  .cardlink.soon .ico{background:rgba(21,19,15,.05);color:var(--ink-3)}
+  .cardlink.soon .arrow{display:none}
+  .soon-tag{
+    margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink-3);white-space:nowrap;
+  }
+  .live{margin-top:36px;font-size:15px;color:var(--ink-2)}
+  .live a{color:var(--violet);text-decoration:none;border-bottom:1px solid rgba(139,48,232,.35)}
+  .live a:hover{border-bottom-color:var(--violet)}
+  footer{position:relative;z-index:1;margin-top:64px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+  footer a{color:inherit;text-decoration:none}
+  @media (max-width:520px){
+    .cardlink{padding:18px 18px}
+    .cardlink .t{font-size:20px}
+  }
+</style>
+</head>
+<body>
+  <div class="blob" style="width:640px;height:640px;top:-260px;right:-180px;background:radial-gradient(circle,rgba(201,162,244,.5) 0%,transparent 70%);opacity:.55"></div>
+  <div class="blob" style="width:520px;height:520px;bottom:-240px;left:-160px;background:radial-gradient(circle,rgba(255,192,174,.45) 0%,transparent 70%);opacity:.45"></div>
+
+  <div class="wrap">
+    <div class="brand"><a href="https://www.app.westapt.com/">Apateu</a></div>
+    <div class="eyebrow">Pre-seed · Summer 2026</div>
+    <h1>Investor <em>materials.</em></h1>
+    <p class="lede">The AI housing discovery engine for Gen Z students.</p>
+
+    <div class="cards">
+      <a class="cardlink" href="/deck/Apateu-Preseed-Deck.pdf" target="_blank" rel="noopener">
+        <span class="ico">▤</span>
+        <span>
+          <span class="t" style="display:block">Pitch deck</span>
+          <span class="d" style="display:block">11 slides · PDF</span>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <!-- Demo video: when it's ready, turn this div into
+           <a class="cardlink" href="/deck/demo.mp4" target="_blank" rel="noopener"> …
+           and swap the soon-tag for <span class="arrow">→</span>. -->
+      <div class="cardlink soon" aria-disabled="true">
+        <span class="ico">▶</span>
+        <span>
+          <span class="t" style="display:block">Product demo</span>
+          <span class="d" style="display:block">Video</span>
+        </span>
+        <span class="soon-tag">Coming soon</span>
+      </div>
+    </div>
+
+    <p class="live">Or skip the materials — the product is live and public:<br>
+      <a href="https://westapt.com/agent" target="_blank" rel="noopener">try the housing agent</a>, no sign-up needed.
+    </p>
+  </div>
+
+  <footer><a href="mailto:apateu.app@gmail.com">apateu.app@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.app.westapt.com/">www.app.westapt.com</a></footer>
+</body>
+</html>
