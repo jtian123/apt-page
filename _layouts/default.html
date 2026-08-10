@@ -73,44 +73,163 @@
 <!-- ══════════════ 02 · HOUSING AGENT ══════════════ -->
 <section class="ap-section" id="housing-agent">
   <div class="ap-wrap">
-    <div class="ap-split">
-      <div>
-        <div class="ap-eyebrow">02 — Housing agent · in the app</div>
-        <h2 class="ap-h2" style="margin-top:18px">Ask in plain English.<br><span class="ap-em">Get real buildings.</span></h2>
-        <p class="ap-lede" style="margin-top:22px">
-          We index apartment buildings straight from the property managers' own sites — live prices,
-          per-bed rates, floor plans, concessions. Then an agent answers on top of it.
-        </p>
-        <ul class="ap-feats">
-          <li><span class="n">·</span><p><b>Natural-language search</b> over our own index — grid + map, per-bed prices, current availability.</p></li>
-          <li><span class="n">·</span><p><b>Real answers</b> — neighborhoods, commute times, and what each building is actually like.</p></li>
-          <li><span class="n">·</span><p><b>Subleases side by side</b> with operator inventory, so student listings and buildings show up in one search.</p></li>
-          <li><span class="n">·</span><p><b>Roommate matching</b> ranked by lifestyle fit, not randomness.</p></li>
-        </ul>
-        <div style="margin-top:38px">
-          <a class="ap-btn ap-btn--primary" href="{{ site.agent_url }}" target="_blank" rel="noopener">
-            Try it <span class="ap-arrow">→</span>
-          </a>
+    <div style="max-width:700px">
+      <div class="ap-eyebrow">02 — Housing agent · in the app</div>
+      <h2 class="ap-h2" style="margin-top:18px">AI-native<br><span class="ap-em">apartment search.</span></h2>
+      <p class="ap-lede" style="margin-top:22px">
+        Old apartment sites make you do the work: twenty open tabs, rigid filter menus, stale
+        prices — and you still end up asking every building the same questions. Here, you ask
+        once. The agent does the searching.
+      </p>
+      <div style="margin-top:32px">
+        <a class="ap-btn ap-btn--primary" href="{{ site.agent_url }}" target="_blank" rel="noopener">
+          Try it <span class="ap-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- A real session, re-drawn: one hard question → the agent researches the
+         whole metro in one pass and paints the answer on the map. -->
+    <div class="ap-demo">
+      <div class="ap-demo__card ap-demomap" aria-label="Map of the Bay Area drawn by the agent: a purple column over each region whose height is that region's median one-bedroom rent, from $2,408 in San Ramon to $5,057 in SoMa.">
+        <!-- Real basemap (Mapbox light — the style the product itself uses), baked at
+             build time. Bar positions are computed from each region's true center via
+             Web Mercator for THIS center/zoom — regenerate positions if the image
+             is re-framed (scratchpad mapcalc.js pattern). -->
+        <div class="ap-demomap__plot">
+        <div class="ap-bar" style="--dx:29%;--dy:67.1%;--mx:16.5%;--my:67.2%"><span class="v">$4,674</span><i style="--h:88px"></i><span class="n">Nob Hill</span></div>
+        <div class="ap-bar" style="--dx:39.5%;--dy:65.3%;--mx:34%;--my:65.5%"><span class="v">$5,057</span><i style="--h:100px"></i><span class="n">SoMa</span></div>
+        <div class="ap-bar" style="--dx:49%;--dy:76.4%;--mx:44.4%;--my:75.6%"><span class="v">$2,995</span><i style="--h:38px"></i><span class="n">UC Berkeley</span></div>
+        <div class="ap-bar ap-bar--xs-off" style="--dx:60.5%;--dy:81.8%"><span class="v">$2,610</span><i style="--h:26px"></i><span class="n">Walnut Creek</span></div>
+        <div class="ap-bar" style="--dx:69.2%;--dy:66%;--mx:80%;--my:66.1%"><span class="v">$2,408</span><i style="--h:20px"></i><span class="n">San Ramon</span></div>
+        <div class="ap-bar" style="--dx:58.7%;--dy:52%;--mx:64.5%;--my:53.6%"><span class="v">$2,539</span><i style="--h:24px"></i><span class="n">Hayward</span></div>
+        <div class="ap-bar ap-bar--xs-off" style="--dx:40%;--dy:39.9%"><span class="v">$3,437</span><i style="--h:51px"></i><span class="n">San Mateo</span></div>
+        <div class="ap-bar" style="--dx:49.5%;--dy:31.9%;--mx:47.9%;--my:35.5%"><span class="v">$4,355</span><i style="--h:79px"></i><span class="n">Redwood City</span></div>
+        <div class="ap-bar" style="--dx:56%;--dy:20.7%;--mx:62%;--my:25.5%"><span class="v">$4,225</span><i style="--h:75px"></i><span class="n">Mountain View</span></div>
+        <div class="ap-bar ap-bar--xs-off" style="--dx:68.5%;--dy:19.5%"><span class="v">$3,935</span><i style="--h:66px"></i><span class="n">Sunnyvale</span></div>
+        <div class="ap-bar ap-bar--xs-off" style="--dx:75.5%;--dy:14.1%"><span class="v">$3,353</span><i style="--h:48px"></i><span class="n">San José State</span></div>
+        <span class="ap-demomap__attr">© Mapbox © OpenStreetMap</span>
+        </div>
+
+        <div class="ap-demomap__legend">
+          <div class="l1">1BR median rent by region</div>
+          <div class="l2"><i></i>Whole-unit median · $2,408 – $5,057</div>
+          <div class="l3">Bar height = price · <span class="cnt-d">11</span><span class="cnt-m">7</span> of 29 regions shown</div>
         </div>
       </div>
 
-      <div class="ap-split__media">
-        <div style="display:flex;gap:22px;justify-content:center;align-items:flex-start">
-          <div style="width:47%;border-radius:30px;overflow:hidden;box-shadow:var(--shadow-lift);border:1px solid rgba(255,255,255,.85)">
-            <img src="{{ 'assets/app-agent-home.png' | relative_url }}" width="1290" height="2478" loading="lazy" decoding="async"
-                 alt="The Apateu Student Housing Agent home screen in the iOS app, with the ask box and campus coverage cards"
-                 style="width:100%;height:auto;display:block">
-          </div>
-          <div style="width:47%;border-radius:30px;overflow:hidden;box-shadow:var(--shadow-lift);border:1px solid rgba(255,255,255,.85);margin-top:44px">
-            <img src="{{ 'assets/app-agent-map.png' | relative_url }}" width="565" height="903" loading="lazy" decoding="async"
-                 alt="Apateu agent map view around USC with live per-bed prices for apartments and subleases"
-                 style="width:100%;height:auto;display:block">
-          </div>
+      <div class="ap-demo__card ap-demochat">
+        <div class="ap-demochat__head"><span class="dot" aria-hidden="true"></span>Apateu agent<span class="live">live index</span></div>
+        <p class="ap-demochat__q">If I want to rent a 1B, can you compare the average monthly rent across all Bay Area regions?</p>
+        <div class="ap-demochat__steps">
+          <div><b>✓</b>Counting inventory — 29 regions in one pass</div>
+          <div><b>✓</b>Drawing the results on the map</div>
         </div>
-        <p class="ap-muted" style="margin-top:16px;font-size:13.5px;font-family:var(--mono);letter-spacing:.04em;text-align:center">
-          Map illustrative — open the agent for live results.
-        </p>
+        <div class="ap-demochat__a">
+          <p>Across the 29 Bay Area regions we index, 1-bedroom medians run <b>$2,408 – $5,057</b>:</p>
+          <div class="row"><span class="k">Cheapest</span><span>San Ramon $2,408 · Concord $2,530 · Hayward $2,539</span></div>
+          <div class="row"><span class="k">Middle</span><span>Oakland $2,650 · Fremont $2,795 · UC Berkeley $2,995</span></div>
+          <div class="row"><span class="k">Top</span><span>Mountain View $4,225 · Nob Hill $4,674 · SoMa $5,057</span></div>
+          <p class="tail">Every number is a live median from buildings we index — the map is drawn by the agent, to scale.</p>
+        </div>
       </div>
+    </div>
+    <p class="ap-muted ap-demo__cap">Re-drawn from a real session on the live index — one question, 29 regions, 596 buildings.</p>
+  </div>
+</section>
+
+<!-- ══════════════ 03 · HOW IT WORKS ══════════════ -->
+<section class="ap-section ap-section--tight" id="how-it-works">
+  <div class="ap-wrap">
+    <div style="max-width:680px">
+      <div class="ap-eyebrow">03 — How it works</div>
+      <h2 class="ap-h2" style="margin-top:18px">One question in.<br><span class="ap-em">A researched answer out.</span></h2>
+      <p class="ap-lede" style="margin-top:20px">
+        The agent runs on an index we build and refresh ourselves — every answer is grounded in it.
+      </p>
+    </div>
+
+    <!-- The pipeline, as a picture: ask → plan → parallel research → synthesize → answer. -->
+    <div class="ap-howflow ap-scroller" style="margin-top:54px;overflow-x:auto;-webkit-overflow-scrolling:touch">
+      <svg viewBox="0 0 1080 392" style="width:100%;min-width:880px;height:auto" role="img"
+           aria-label="How the agent works: your question is turned into a research plan, the agent searches the live index, building facts, prices and deals, and commutes in parallel, synthesizes the results, and answers with real numbers, a ranked grid, and a map it draws on — or says so when something is not covered.">
+        <defs>
+          <marker id="howArr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0.5,1 L9,5 L0.5,9 Z" fill="#8b30e8"/>
+          </marker>
+          <marker id="howArrDim" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+            <path d="M0.5,1 L9,5 L0.5,9 Z" fill="#a89e90"/>
+          </marker>
+          <filter id="howShadow" x="-25%" y="-25%" width="150%" height="160%">
+            <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#15130f" flood-opacity="0.08"/>
+          </filter>
+        </defs>
+
+        <!-- column labels -->
+        <g font-family="Geist Mono,monospace" font-size="10.5" letter-spacing="2.4" fill="#665f53" text-anchor="middle">
+          <text x="95" y="38">ASK</text>
+          <text x="310" y="38">PLAN</text>
+          <text x="525" y="38">RESEARCH · IN PARALLEL</text>
+          <text x="755" y="38">SYNTHESIZE</text>
+          <text x="965" y="38">ANSWER</text>
+        </g>
+
+        <!-- ask -->
+        <rect x="20" y="170" width="150" height="72" rx="16" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.5" filter="url(#howShadow)"/>
+        <text x="95" y="201" text-anchor="middle" font-family="Instrument Serif,serif" font-size="20" fill="#15130f">Your question</text>
+        <text x="95" y="223" text-anchor="middle" font-family="Geist Mono,monospace" font-size="10.5" fill="#665f53">in plain English</text>
+        <path d="M170,206 C192,206 204,206 226,206" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+
+        <!-- plan -->
+        <rect x="232" y="170" width="156" height="72" rx="16" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.5" filter="url(#howShadow)"/>
+        <text x="310" y="201" text-anchor="middle" font-family="Instrument Serif,serif" font-size="20" fill="#15130f">Plan the research</text>
+        <text x="310" y="223" text-anchor="middle" font-family="Geist Mono,monospace" font-size="10.5" fill="#665f53">what to look up</text>
+
+        <!-- fan-out edges -->
+        <path d="M388,192 C412,160 420,112 444,96"  stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M388,200 C412,188 420,172 444,166" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M388,212 C412,224 420,240 444,246" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M388,220 C412,252 420,300 444,316" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+
+        <!-- parallel research group -->
+        <rect x="432" y="56" width="186" height="300" rx="20" fill="rgba(139,48,232,0.05)" stroke="rgba(139,48,232,0.22)" stroke-width="1.3"/>
+        <g font-family="Geist,sans-serif" font-size="13.5" fill="#15130f" text-anchor="middle">
+          <rect x="448" y="72"  width="154" height="46" rx="12" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.4"/>
+          <text x="525" y="100">Live index search</text>
+          <rect x="448" y="142" width="154" height="46" rx="12" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.4"/>
+          <text x="525" y="170">Building facts</text>
+          <rect x="448" y="212" width="154" height="46" rx="12" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.4"/>
+          <text x="525" y="240">Prices &amp; deals</text>
+          <rect x="448" y="282" width="154" height="46" rx="12" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.4"/>
+          <text x="525" y="310">Commutes &amp; areas</text>
+        </g>
+
+        <!-- gather edges -->
+        <path d="M618,96 C644,112 652,160 676,192"  stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M618,166 C644,172 652,188 676,200" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M618,246 C644,240 652,224 676,212" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M618,316 C644,300 652,252 676,220" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+
+        <!-- synthesize -->
+        <rect x="682" y="170" width="146" height="72" rx="16" fill="#fff" stroke="#8b30e8" stroke-width="1.8" filter="url(#howShadow)"/>
+        <text x="755" y="201" text-anchor="middle" font-family="Instrument Serif,serif" font-size="20" fill="#15130f">Synthesize</text>
+        <text x="755" y="223" text-anchor="middle" font-family="Geist Mono,monospace" font-size="10.5" fill="#665f53">compare · rank · check</text>
+
+        <!-- answer edges -->
+        <path d="M828,192 C852,172 858,140 880,124" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M828,206 C852,206 858,206 880,206" stroke="#8b30e8" stroke-width="1.8" fill="none" marker-end="url(#howArr)"/>
+        <path d="M828,220 C852,240 858,272 880,288" stroke="#a89e90" stroke-width="1.5" fill="none" stroke-dasharray="5 5" marker-end="url(#howArrDim)"/>
+
+        <!-- answers -->
+        <g text-anchor="middle">
+          <rect x="886" y="98"  width="170" height="52" rx="14" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.5" filter="url(#howShadow)"/>
+          <text x="971" y="129" font-family="Instrument Serif,serif" font-size="18" fill="#15130f">Answer, with numbers</text>
+          <rect x="886" y="180" width="170" height="52" rx="14" fill="#fffdf9" stroke="#e3dcd0" stroke-width="1.5" filter="url(#howShadow)"/>
+          <text x="971" y="211" font-family="Instrument Serif,serif" font-size="18" fill="#15130f">Ranked grid + map</text>
+          <rect x="886" y="262" width="170" height="52" rx="14" fill="none" stroke="#a89e90" stroke-width="1.4" stroke-dasharray="6 5"/>
+          <text x="971" y="293" font-family="Geist Mono,monospace" font-size="11.5" fill="#665f53">not covered? it says so</text>
+        </g>
+      </svg>
     </div>
   </div>
 </section>
@@ -120,7 +239,7 @@
   <div class="ap-wrap">
     <div style="max-width:640px">
       <div class="ap-eyebrow">Where we're live</div>
-      <h2 class="ap-h2" style="margin-top:18px">Four metros indexed.<br><span class="ap-em">The Bay is next.</span></h2>
+      <h2 class="ap-h2" style="margin-top:18px">Five metros indexed.<br><span class="ap-em">The Bay just went live.</span></h2>
       <p class="ap-lede" style="margin-top:20px">
         Every building is read from the operator's own site and refreshed on a cadence, so you see the
         latest advertised price we found — not a stale copy of a copy.
@@ -227,6 +346,24 @@
 </section>
 
 </main>
+
+<script>
+// Coverage cards show LIVE per-metro building counts. The HTML carries baked
+// fallbacks (deduped byMetro numbers from build day); this refresh keeps them
+// current without a site redeploy. Fails silently — the fallbacks stay.
+(function () {
+  fetch('https://westapt.com/api/agent/status')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (s) {
+      if (!s || !Array.isArray(s.byMetro)) return;
+      s.byMetro.forEach(function (m) {
+        var el = document.querySelector('[data-metro-count="' + m.metro + '"]');
+        if (el && m.managed > 0) el.textContent = m.managed.toLocaleString('en-US');
+      });
+    })
+    .catch(function () {});
+})();
+</script>
 
 {% include footer.html %}
 
