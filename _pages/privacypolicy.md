@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-July 25 2026
+September 30 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -56,10 +56,19 @@ We use data from the Platform to train and improve the Apateu housing agent so i
 
 ---
 
+### 2.2. Phone Verification and Text Messages
+To post a listing or send a like, you verify your mobile phone number with a one-time code we text you. Your number is private: other users never see it, and one number can verify only one account.
+
+If you agree on the verification screen, we also text you about activity on your account — for example when someone likes your listing, accepts your request, or sends you a message. Promotional texts (occasional offers from Apateu) are sent **only if you separately turn them on**. Message frequency varies. Message and data rates may apply. Reply **STOP** to any text to stop, or **HELP** for help. You can also change these choices in the App at any time.
+
+**We do not sell, rent, or share your mobile phone number or your text-message consent with third parties or affiliates for their marketing purposes.**
+
+---
+
 ## 3. Disclosure of Your Information
 
 ### 3.1. Service Providers  
-We may share your data with third-party vendors who perform services on our behalf (hosting, analytics, payment processing, email delivery).
+We may share your data with third-party vendors who perform services on our behalf (hosting, analytics, payment processing, email delivery, and text-message delivery through Twilio). They may use it only to provide those services to us.
 
 ### 3.2. Business Transfers  
 In the event of a merger, acquisition, or sale of assets, your information may be transferred to the successor entity (with notice).
@@ -78,7 +87,7 @@ Any content you post publicly (e.g., listing details, public chat messages) is v
 You can view or update your account information at any time via the App’s settings.
 
 ### 4.2. Communications  
-You may opt out of marketing emails by following the unsubscribe link or contacting us at apateu.app@gmail.com.
+You may opt out of marketing emails by following the unsubscribe link or contacting us at apateu.app@gmail.com. You can turn text messages off in the App (Profile › Settings › Verification) or reply STOP to any text.
 
 ### 4.3. Location Permissions  
 You can enable or disable location access in your device settings. If you revoke permission, location-based features will be limited.

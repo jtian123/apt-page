@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-July 25 2026
+September 30 2026
 
 # Terms of Service
 
@@ -41,6 +41,14 @@ The Platform includes AI features, including the Apateu housing agent and AI-ass
 - **Registration:** You agree to provide accurate, current, and complete information when creating an account.  
 - **Credentials:** You are responsible for safeguarding your password and account. You agree to notify us immediately of any unauthorized use.  
 - **Account Termination:** We may suspend or terminate your account if you violate these Terms or for any other reason, without notice.  
+
+## 5A. Text Messages (SMS)  
+- **Program:** Apateu text messages. To post a listing or send a like, you verify your mobile number with a one-time code we text you.  
+- **What we send:** by agreeing on the verification screen, you agree to get account texts from Apateu — verification codes and alerts when someone likes your listing, accepts your request, or messages you. Promotional texts are sent only if you turn them on in the App.  
+- **Frequency and cost:** message frequency varies. Message and data rates may apply.  
+- **Stop or get help:** reply **STOP** to any text to stop, **START** to resume, or **HELP** for help. You can also turn texts off in the App (Profile › Settings › Verification), or email **apateu.app@gmail.com**.  
+- **US only:** texts are sent to US mobile numbers only. Carriers are not liable for delayed or undelivered messages.  
+- **Privacy:** we never sell or share your mobile number or text consent for anyone's marketing. See our [Privacy Policy](/privacypolicy/).  
 
 ## 6. User Conduct  
 You agree not to:  
