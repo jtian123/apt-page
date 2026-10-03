@@ -9,3 +9,6 @@ nav_order: 3
 
 **Need help?**  
 Email us at [apateu.app@gmail.com](mailto:apateu.app@gmail.com) and we'll reply within 24 hours.
+
+**Text alerts**  
+Reply **HELP** to any Apateu text for help, or **STOP** to stop texts. How alerts work: [Text alerts](/sms/).

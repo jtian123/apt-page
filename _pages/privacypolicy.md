@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-September 30 2026
+October 2 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -59,7 +59,7 @@ We use data from the Platform to train and improve the Apateu housing agent so i
 ### 2.2. Phone Verification and Text Messages
 To post a listing or send a like, you verify your mobile phone number with a one-time code we text you. Your number is private: other users never see it, and one number can verify only one account.
 
-If you agree on the verification screen, we also text you about activity on your account — for example when someone likes your listing, accepts your request, or sends you a message. Promotional texts (occasional offers from Apateu) are sent **only if you separately turn them on**. Message frequency varies. Message and data rates may apply. Reply **STOP** to any text to stop, or **HELP** for help. You can also change these choices in the App at any time.
+Text alerts are **optional**. Only if you tick **"Text me Apateu alerts"** on the phone screen (unchecked by default), or turn on **Activity** in the App, do we text you about activity on your account: when someone likes your listing, accepts your request, or sends you a message. You do not have to agree to texts to use Apateu. We do not send promotional texts. Up to 5 alerts a day. Message and data rates may apply. Reply **STOP** to any text to stop, or **HELP** for help. You can also change this in the App at any time. See [Text alerts](/sms/).
 
 **We do not sell, rent, or share your mobile phone number or your text-message consent with third parties or affiliates for their marketing purposes.**
 
@@ -158,7 +158,7 @@ We may update this Policy from time to time. We will post the revised version wi
 
 ## 12. Contact Us
 
-For questions or concerns about this Privacy Policy, please email us at **apateu.app@gmail.com**.
+For questions or concerns about this Privacy Policy, please email us at **apateu.app@gmail.com**, or write to Apateu, Inc., 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
 
 ---
 

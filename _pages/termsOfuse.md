@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-September 30 2026
+October 2 2026
 
 # Terms of Service
 
@@ -43,9 +43,11 @@ The Platform includes AI features, including the Apateu housing agent and AI-ass
 - **Account Termination:** We may suspend or terminate your account if you violate these Terms or for any other reason, without notice.  
 
 ## 5A. Text Messages (SMS)  
-- **Program:** Apateu text messages. To post a listing or send a like, you verify your mobile number with a one-time code we text you.  
-- **What we send:** by agreeing on the verification screen, you agree to get account texts from Apateu — verification codes and alerts when someone likes your listing, accepts your request, or messages you. Promotional texts are sent only if you turn them on in the App.  
-- **Frequency and cost:** message frequency varies. Message and data rates may apply.  
+- **Program:** Apateu text alerts. See how sign-up works at [Text alerts](/sms/).  
+- **Verification code:** to post a listing or send a like, you confirm your mobile number with a one-time code we text you. You asked for that code, so it is the only text you get unless you opt in to alerts.  
+- **Alerts are optional:** we text you alerts only if you tick **"Text me Apateu alerts"** on the phone screen (it is unchecked by default) or turn on **Activity** in the App (Profile › Settings › Verification). Alerts tell you when someone likes your listing, accepts your request, or messages you. You do not have to agree to texts to use Apateu.  
+- **No marketing texts:** we do not send promotional texts.  
+- **Frequency and cost:** up to 5 alerts a day; it varies with your activity. Message and data rates may apply.  
 - **Stop or get help:** reply **STOP** to any text to stop, **START** to resume, or **HELP** for help. You can also turn texts off in the App (Profile › Settings › Verification), or email **apateu.app@gmail.com**.  
 - **US only:** texts are sent to US mobile numbers only. Carriers are not liable for delayed or undelivered messages.  
 - **Privacy:** we never sell or share your mobile number or text consent for anyone's marketing. See our [Privacy Policy](/privacypolicy/).  
@@ -91,4 +93,4 @@ These Terms and our Privacy Policy constitute the entire agreement between you a
 ---
 
 ## Contact Information  
-For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**.
+For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**, or write to Apateu, Inc., 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.

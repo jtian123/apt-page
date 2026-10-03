@@ -229,3 +229,6 @@ markdown: kramdown
 agent_url                                 : https://westapt.com/agent
 tob_url                                   : https://about.westapt.com
 contact_email                             : apateu.app@gmail.com
+# Legal entity — must match the IRS EIN letter (carrier/texting registration checks it).
+legal_name                                : "Apateu, Inc."
+business_address                          : "3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010"
