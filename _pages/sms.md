@@ -6,7 +6,7 @@ include_in_header: false
 
 # Apateu text alerts
 
-Apateu, Inc. runs the Apateu iOS app, where college students find and post sublets. This page shows how our text messages work and how people sign up for them.
+Apateu LLC runs the Apateu iOS app, where college students find and post sublets. This page shows how our text messages work and how people sign up for them.
 
 ## How people sign up
 

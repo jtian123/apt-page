@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-October 2 2026
+October 6 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -158,7 +158,7 @@ We may update this Policy from time to time. We will post the revised version wi
 
 ## 12. Contact Us
 
-For questions or concerns about this Privacy Policy, please email us at **apateu.app@gmail.com**, or write to Apateu, Inc., 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
+For questions or concerns about this Privacy Policy, please email us at **apateu.app@gmail.com**, or write to Apateu LLC, 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
 
 ---
 

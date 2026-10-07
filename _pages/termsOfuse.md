@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-October 2 2026
+October 6 2026
 
 # Terms of Service
 
@@ -93,4 +93,4 @@ These Terms and our Privacy Policy constitute the entire agreement between you a
 ---
 
 ## Contact Information  
-For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**, or write to Apateu, Inc., 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
+For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**, or write to Apateu LLC, 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
