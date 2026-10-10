@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-October 6 2026
+October 9 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -65,10 +65,22 @@ Text alerts are **optional**. Only if you tick **"Text me Apateu alerts"** on th
 
 ---
 
+### 2.3. AI Assistants (Meta Muse, ChatGPT, Claude and others)
+You can connect an AI assistant to Apateu. **Search only** needs no account and shares no personal data with us. If you choose **Link my Apateu account**, you confirm the email address (or phone number) verified in your Apateu app with a one-time code, and choose what the assistant may do: save homes and keep search alerts, and send messages to sublease hosts from your account. The assistant asks you before each message, and messages appear in the Apateu app like any other.
+
+For a linked connection we store only what it needs: a protected (hashed) access key, the alerts it creates, the homes you save, and the messages you send. We do not sell this data or use it for advertising. Disconnecting the assistant ends the connection right away and deletes its alerts; your saved homes and messages stay in your Apateu account. Apateu never searches or filters by sex, gender, race, religion, national origin, disability, family status or age.
+
+### 2.4. Apateu AI and Our AI Providers
+Apateu AI is the housing agent and the AI in your chats. To work, we send what is needed to our AI providers, **OpenAI** and **Anthropic**: your questions to the housing agent, and — in a chat — the messages in that chat (including the other person's) and both first names. In a chat, the AI uses this to answer questions you ask it privately and to keep track of where the conversation stands (for example, terms you have agreed). We never send your password, ID images or payment details.
+
+An answer you ask for in a chat is shown only to you. Our providers process this data only to produce the answers, and under their business terms they do not use it to train their own models. Section 2.1 explains how Apateu itself may use de-identified housing-agent questions.
+
+---
+
 ## 3. Disclosure of Your Information
 
 ### 3.1. Service Providers  
-We may share your data with third-party vendors who perform services on our behalf (hosting, analytics, payment processing, email delivery, and text-message delivery through Twilio). They may use it only to provide those services to us.
+We may share your data with third-party vendors who perform services on our behalf (hosting, analytics, payment processing, email delivery, text-message delivery through Twilio, and AI processing through OpenAI and Anthropic as described in section 2.4). They may use it only to provide those services to us.
 
 ### 3.2. Business Transfers  
 In the event of a merger, acquisition, or sale of assets, your information may be transferred to the successor entity (with notice).
@@ -124,7 +136,7 @@ We implement industry-standard security measures (encryption in transit, secure 
 
 ## 7. Children’s Privacy
 
-The Platform is not intended for children under 13. We do not knowingly collect personal information from users under 13. If you are a parent or guardian and believe we have collected data from a child under 13, please contact us to request deletion.
+The Platform is only for people 18 and older (see our Terms of Service). We do not knowingly collect personal information from anyone under 18. If you are a parent or guardian and believe we have collected data from a minor, please contact us and we will delete it.
 
 ---
 
