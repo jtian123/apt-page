@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-October 9 2026
+October 16 2026
 
 Apateu (“we,” “us,” or “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile app (“App”) and related services (collectively, the “Platform”). By using the Platform, you agree to the collection and use of information in accordance with this policy.
 
@@ -66,9 +66,11 @@ Text alerts are **optional**. Only if you tick **"Text me Apateu alerts"** on th
 ---
 
 ### 2.3. AI Assistants (Meta Muse, ChatGPT, Claude and others)
-You can connect an AI assistant to Apateu. **Search only** needs no account and shares no personal data with us. If you choose **Link my Apateu account**, you confirm the email address (or phone number) verified in your Apateu app with a one-time code, and choose what the assistant may do: save homes and keep search alerts, and send messages to sublease hosts from your account. The assistant asks you before each message, and messages appear in the Apateu app like any other.
+You can connect an AI assistant to Apateu. **Search only** needs no account and shares no personal data with us. To do more, you confirm an email address with a one-time code on our page. If an Apateu account already has that email verified, the assistant links to it; if not, we create a new Apateu account for you. You choose what the assistant may do: save homes and keep search alerts, message sublease hosts, and post and manage your own sublease, or keep it read-only. The assistant asks you before every message it sends and every listing it publishes.
 
-For a linked connection we store only what it needs: a protected (hashed) access key, the alerts it creates, the homes you save, and the messages you send. We do not sell this data or use it for advertising. Disconnecting the assistant ends the connection right away and deletes its alerts; your saved homes and messages stay in your Apateu account. Apateu never searches or filters by sex, gender, race, religion, national origin, disability, family status or age.
+We store a protected (hashed) access key, your alerts and saved homes, sublease drafts and photos (an unpublished draft is deleted after 30 days), your listings and your messages. These are stored and protected like the same actions in the app, and appear in the app. **Data from AI assistants is never used to train AI models (section 2.1 does not apply to it)**, never sold, and never used for advertising or profiling.
+
+Disconnecting ends access right away and deletes its alerts. To delete your account, use the app (Me › Settings › Delete account) or, for an account created through an assistant, westapt.com/connect/key. Apateu never searches or filters by sex, gender, race, religion, national origin, disability, family status or age.
 
 ### 2.4. Apateu AI and Our AI Providers
 Apateu AI is the housing agent and the AI in your chats. To work, we send what is needed to our AI providers, **OpenAI** and **Anthropic**: your questions to the housing agent, and — in a chat — the messages in that chat (including the other person's) and both first names. In a chat, the AI uses this to answer questions you ask it privately and to keep track of where the conversation stands (for example, terms you have agreed). We never send your password, ID images or payment details.
