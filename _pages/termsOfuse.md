@@ -5,7 +5,7 @@ include_in_header: false
 ---
 
 **Last updated**  
-October 9 2026
+October 25 2026
 
 # Terms of Service
 
@@ -33,7 +33,7 @@ The Platform includes AI features: the Apateu housing agent and Ask AI in chats.
 
 **Accuracy.** Listing and building information may come from third-party sources and can be incomplete or out of date. We do not warrant that AI output is accurate, complete or current.
 
-**Your content and AI training.** By posting content or interacting with our AI features, you grant Apateu a non-exclusive, worldwide, royalty-free licence to host, display and process that content in order to operate the Platform, and to use it to train, evaluate and improve Apateu's AI models and housing agent, as described in our [Privacy Policy](/privacypolicy/). You can opt out of AI training as set out in that policy. You retain ownership of your content.
+**Your content and AI training.** By posting content or interacting with our AI features, you grant Apateu a non-exclusive, worldwide, royalty-free licence to host, display and process that content in order to operate the Platform, and to use it to train, evaluate and improve Apateu's AI models and housing agent, as described in our [Privacy Policy](/privacypolicy/). You can opt out of AI training as set out in that policy. Content that reaches us through an AI assistant you connect (such as Meta Muse) is never used for AI training (Privacy Policy section 2.3). You retain ownership of your content.
 
 ---
 
@@ -95,4 +95,4 @@ These Terms and our Privacy Policy constitute the entire agreement between you a
 ---
 
 ## Contact Information  
-For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**, or write to Apateu LLC, 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.
+For questions or concerns about these Terms, please email us at **apateu.app@gmail.com**, or write to Apateu, Inc., 3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010.

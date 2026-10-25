@@ -14,7 +14,7 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/logo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Apateu                                         # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : "Apateu is the AI housing discovery engine for Gen Z students — search 1,600+ indexed apartment buildings and verified student subleases in plain English across LA, New York, Boston and Seattle."
+app_description                           : "Apateu is the AI housing discovery engine for Gen Z students — search 4,700+ indexed apartment buildings and verified student subleases in plain English across LA, New York, Boston, Seattle and the Bay Area."
 
 # Hero Section Content
 hero_title                                : "The AI housing discovery engine for Gen Z students"
@@ -229,6 +229,7 @@ markdown: kramdown
 agent_url                                 : https://westapt.com/agent
 tob_url                                   : https://about.westapt.com
 contact_email                             : apateu.app@gmail.com
-# Legal entity — Apateu LLC is the App Store seller and the business on the toll-free texting registration; keep all three the same.
-legal_name                                : "Apateu LLC"
+# Legal entity — Apateu, Inc. (Delaware C corporation) since 2026-10-25: the company on this site, the Muse connector
+# and investor papers. (The App Store seller is still Apateu LLC until the Apple account moves.)
+legal_name                                : "Apateu, Inc."
 business_address                          : "3185 Wilshire Blvd, Suite 682, Los Angeles, CA 90010"
